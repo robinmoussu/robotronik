@@ -1,0 +1,63 @@
+Last Modified Date & Time: 09/30/2012 12:47:35
+
+Project : 2_Capteurs
+		Schematic : TopDesign/TopDesign.cysch
+
+		Capteur_2	v 1.50	v 1.60
+		LEDR	v 1.50	v 1.60
+		Button_etalonnage_1	v 1.50	v 1.60
+		DebugL	v 1.50	v 1.60
+		DebugH	v 1.50	v 1.60
+		LEDG	v 1.50	v 1.60
+		LEDB	v 1.50	v 1.60
+		Capteur_1	v 1.50	v 1.60
+		Button_etalonnage_2	v 1.50	v 1.60
+		Clock_12MHz_2	v 1.50	v 1.60
+		timer_clock_1	v 1.50	v 1.60
+		Clock_2k	v 1.50	v 1.60
+		timer_clock_2	v 1.50	v 1.60
+		Clock_12MHz_1	v 1.50	v 1.60
+		Counter_LED	v 2.0	v 2.10
+		Counter_2	v 2.0	v 2.10
+		Counter_1	v 2.0	v 2.10
+
+Project : Final_frequence_mix_ssInt
+		Schematic : TopDesign/TopDesign.cysch
+
+		Capteur_R	v 1.50	v 1.60
+		LEDR	v 1.50	v 1.60
+		Button_etalonnage_L	v 1.50	v 1.60
+		MotorLeftFor	v 1.50	v 1.60
+		MotorRightFor	v 1.50	v 1.60
+		Button_On_Off	v 1.50	v 1.60
+		MotorLeftBak	v 1.50	v 1.60
+		MotorRightBak	v 1.50	v 1.60
+		DebugL	v 1.50	v 1.60
+		DebugH	v 1.50	v 1.60
+		LEDG	v 1.50	v 1.60
+		LEDB	v 1.50	v 1.60
+		Capteur_L	v 1.50	v 1.60
+		Button_etalonnage_R	v 1.50	v 1.60
+		Clock_12MHz_R	v 1.50	v 1.60
+		Clock_4800k	v 1.50	v 1.60
+		Clock_200	v 1.50	v 1.60
+		timer_clock_1	v 1.50	v 1.60
+		Clock_2k	v 1.50	v 1.60
+		timer_clock_2	v 1.50	v 1.60
+		Clock_12MHz_L	v 1.50	v 1.60
+		PWM_1	v 2.0	v 2.10
+		Counter_LED	v 2.0	v 2.10
+		Counter_R	v 2.0	v 2.10
+		Counter_L	v 2.0	v 2.10
+
+Project : 2_Capteurs
+		Design Wide APIs
+
+		cy_boot	v 2.21	v 2.40
+
+Project : Final_frequence_mix_ssInt
+		Design Wide APIs
+
+		cy_boot	v 2.21	v 2.40
+
+

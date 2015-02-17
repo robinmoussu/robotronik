@@ -1,0 +1,79 @@
+.TH "comXbee.c" 3 "Jeudi 22 Mai 2014" "Petit Robot coupe 2014" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+comXbee.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'comXbee\&.h'\fP
+.br
+\fC#include 'uart_xbee\&.h'\fP
+.br
+\fC#include 'main\&.h'\fP
+.br
+
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsendXY\fP ()"
+.br
+.ti -1c
+.RI "void \fBmessage_processing_xbee\fP (unsigned char inMessage)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "volatile char \fBtirette\fP"
+.br
+.ti -1c
+.RI "volatile \fBPos\fP \fBrobot1\fP"
+.br
+.ti -1c
+.RI "volatile \fBPos\fP \fBrobotNous\fP"
+.br
+.ti -1c
+.RI "volatile char \fBfin\fP"
+.br
+.ti -1c
+.RI "\fBCouleur\fP \fBcouleur\fP"
+.br
+.in -1c
+.SH "Documentation des fonctions"
+.PP 
+.SS "void message_processing_xbee (unsigned charinMessage)"
+
+.PP
+Définition à la ligne 30 du fichier comXbee\&.c\&.
+.SS "void sendXY ()"
+
+.PP
+Définition à la ligne 21 du fichier comXbee\&.c\&.
+.SH "Documentation des variables"
+.PP 
+.SS "\fBCouleur\fP couleur"
+
+.PP
+Définition à la ligne 30 du fichier main_petit_robot\&.c\&.
+.SS "volatile char fin"
+
+.PP
+Définition à la ligne 20 du fichier main_petit_robot\&.c\&.
+.SS "volatile \fBPos\fP robot1"
+
+.PP
+Définition à la ligne 10 du fichier main_petit_robot\&.c\&.
+.SS "volatile \fBPos\fP robotNous"
+
+.PP
+Définition à la ligne 9 du fichier main_petit_robot\&.c\&.
+.SS "volatile char tirette"
+
+.PP
+Définition à la ligne 19 du fichier main_petit_robot\&.c\&.
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Petit Robot coupe 2014 à partir du code source\&.

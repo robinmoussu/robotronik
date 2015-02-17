@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1328191675 source:c:\users\dan\desktop\espion\main.c
+	<stdio.h>
+	<stdlib.h>
+	"espion.h"
+	"affich.h"
+
+1328028979 c:\users\dan\desktop\espion\espion.h
+
+1328190265 source:c:\users\dan\desktop\espion\espion.c
+	<stdio.h>
+	<stdio.h>
+	"espion.h"
+	"affich.h"
+
+1328191730 c:\users\dan\desktop\espion\affich.h
+	<SDL/SDL.h>
+
+1328191926 source:c:\users\dan\desktop\espion\affich.c
+	"affich.h"
+	<SDL/SDL.h>
+

@@ -1,0 +1,59 @@
+.TH "mouvement.c" 3 "Jeudi 22 Mai 2014" "Petit Robot coupe 2014" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+mouvement.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'ailleurs\&.h'\fP
+.br
+\fC#include 'mouvement\&.h'\fP
+.br
+\fC#include 'comAsser\&.h'\fP
+.br
+
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBcaller\fP (\fBCoordonne_mm\fP postCallageX, \fBCoordonne_mm\fP postCallageY)"
+.br
+.ti -1c
+.RI "void \fBbouger\fP (\fBCoordonne_mm\fP x, \fBCoordonne_mm\fP y)"
+.br
+.ti -1c
+.RI "void \fBavancer\fP (\fBCoordonne_mm\fP x, \fBCoordonne_mm\fP y)"
+.br
+.ti -1c
+.RI "void \fBreculer\fP (\fBCoordonne_mm\fP x, \fBCoordonne_mm\fP y)"
+.br
+.ti -1c
+.RI "void \fBmoveFront\fP ()"
+.br
+.in -1c
+.SH "Documentation des fonctions"
+.PP 
+.SS "void avancer (\fBCoordonne_mm\fPx, \fBCoordonne_mm\fPy)"
+Déplace le robot en direction d'une point en dont les coordonnées sont absolues par rapport à la table\&. 
+.PP
+Définition à la ligne 38 du fichier mouvement\&.c\&.
+.SS "void bouger (\fBCoordonne_mm\fPx, \fBCoordonne_mm\fPy)"
+Déplace le robot en direction d'une point en dont les coordonnées sont absolues par rapport à la table\&. 
+.PP
+Définition à la ligne 23 du fichier mouvement\&.c\&.
+.SS "void caller (\fBCoordonne_mm\fPpostCallageX, \fBCoordonne_mm\fPpostCallageY)"
+Permet de réinitialiser les coordonnées du robot\&. Avance le robot sur une courte distance jusqu'à ce qu'il rentre en butée puis enregistre les coordonnées\&. de la nouvelle position dans l'asser\&. 
+.PP
+Définition à la ligne 16 du fichier mouvement\&.c\&.
+.SS "void moveFront ()"
+
+.PP
+Définition à la ligne 77 du fichier mouvement\&.c\&.
+.SS "void reculer (\fBCoordonne_mm\fPx, \fBCoordonne_mm\fPy)"
+Déplace le robot en direction d'une point en dont les coordonnées sont absolues par rapport à la table\&. 
+.PP
+Définition à la ligne 58 du fichier mouvement\&.c\&.
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Petit Robot coupe 2014 à partir du code source\&.

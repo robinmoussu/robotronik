@@ -1,0 +1,428 @@
+\hypertarget{main_8h}{\section{Référence du fichier main.\+h}
+\label{main_8h}\index{main.\+h@{main.\+h}}
+}
+
+
+Contient tout ce qui doit être inclus dans tout le projet.  
+
+
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$p33\+F\+J128\+M\+C802.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}com\+Asser.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}init.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}debug.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}uart.\+h\char`\"{}}\\*
+\subsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_objectif}{Objectif}
+\begin{DoxyCompactList}\small\item\em Un objectif à atteindre. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_info_mvt}{Info\+Mvt}
+\item 
+struct \hyperlink{struct_action}{Action}
+\item 
+union \hyperlink{union_t__divided_long}{T\+\_\+divided\+Long}
+\item 
+union \hyperlink{union_t__divided_u_long}{T\+\_\+divided\+U\+Long}
+\item 
+struct \hyperlink{struct_pos}{Pos}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{main_8h_a598a3330b3c21701223ee0ca14316eca}{P\+I}~3.\+1415
+\item 
+\#define \hyperlink{main_8h_a691d7e5feec11c1b812c442fd38e845b}{I\+N\+T\+\_\+\+U\+A\+R\+T\+\_\+\+T\+X}
+\item 
+\#define \hyperlink{main_8h_a3d3bf5a2f88b1dba6c6bc13bf889c3cc}{L\+A\+R\+G\+E\+U\+R}~324
+\end{DoxyCompactItemize}
+\subsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef int \hyperlink{main_8h_abff5a495dd3bf48b57d041dce0cf6e68}{Coordonne\+\_\+mm}
+\begin{DoxyCompactList}\small\item\em Coordonnées en mm. \end{DoxyCompactList}\item 
+typedef int \hyperlink{main_8h_a203f209fd8e6ccce1cdf1f386c0dfbde}{Distance\+\_\+mm}
+\begin{DoxyCompactList}\small\item\em Distance en mm. \end{DoxyCompactList}\item 
+typedef float \hyperlink{main_8h_ae149c304d2490d5120c530e2c9fdee4c}{Angle}
+\begin{DoxyCompactList}\small\item\em Angle en degré \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_pos}{Pos} \hyperlink{main_8h_a1e74595e68c7588392e08118304a6f6c}{Pos}
+\end{DoxyCompactItemize}
+\subsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{main_8h_af6a258d8f3ee5206d682d799316314b1}{bool} \{ \hyperlink{main_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}, 
+\hyperlink{main_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}{true}
+ \}
+\begin{DoxyCompactList}\small\item\em Compatibilitée avec le C89… \end{DoxyCompactList}\item 
+enum \hyperlink{main_8h_ac1ac0b5139148f65ad680183c8cc5069}{C\+O\+O\+R\+D\+O\+N\+N\+E\+E\+S\+\_\+2014\+\_\+mm} \{ \\*
+\hyperlink{main_8h_ac1ac0b5139148f65ad680183c8cc5069a420933f648fcf67987521360bb40e8b0}{C\+O\+T\+E} = 88, 
+\hyperlink{main_8h_ac1ac0b5139148f65ad680183c8cc5069a9636f5bb497ae79ecf09091460c096ca}{A\+V\+A\+N\+T} = 60, 
+\hyperlink{main_8h_ac1ac0b5139148f65ad680183c8cc5069aa36ffbc408465c298fa641403c91972f}{A\+R\+R\+I\+E\+R\+E} = 95, 
+\hyperlink{main_8h_ac1ac0b5139148f65ad680183c8cc5069ab26f94a551dbfca6e0f4f6b5ad145c01}{E\+S\+T} = 3000, 
+\\*
+\hyperlink{main_8h_ac1ac0b5139148f65ad680183c8cc5069a564dddee8796eda21f35c76cb586aeb6}{O\+U\+E\+S\+T} = 0, 
+\hyperlink{main_8h_ac1ac0b5139148f65ad680183c8cc5069a911b84b637f2ec3155705a512b168746}{C\+O\+I\+N\+\_\+\+R\+O\+U\+G\+E} = O\+U\+E\+S\+T, 
+\hyperlink{main_8h_ac1ac0b5139148f65ad680183c8cc5069ae48da9c0ccb46631800ad7b96be37ca0}{C\+O\+I\+N\+\_\+\+J\+A\+U\+N\+E} = E\+S\+T, 
+\hyperlink{main_8h_ac1ac0b5139148f65ad680183c8cc5069aa1f529db9f2d334d9c41dcc5f6f6e2a7}{N\+O\+R\+D} = 0, 
+\\*
+\hyperlink{main_8h_ac1ac0b5139148f65ad680183c8cc5069ad2d3ceab3fce63bbe07882ab5a4e991e}{S\+U\+D} = 2000, 
+\hyperlink{main_8h_ac1ac0b5139148f65ad680183c8cc5069ac19eb46f308123caf3fd8ed790c4ca93}{B\+A\+C} = 295 + A\+V\+A\+N\+T, 
+\hyperlink{main_8h_ac1ac0b5139148f65ad680183c8cc5069abffa83cf654a02772eb472b536e4eb8e}{D\+E\+P\+A\+R\+T} = 600, 
+\hyperlink{main_8h_ac1ac0b5139148f65ad680183c8cc5069a3db211bb0d30db282da5a13b354f69c8}{C\+O\+I\+N} = 370, 
+\\*
+\hyperlink{main_8h_ac1ac0b5139148f65ad680183c8cc5069a40c48f576db52a9bc39d4fdf5fcde371}{A\+R\+B\+R\+E} = 275, 
+\hyperlink{main_8h_ac1ac0b5139148f65ad680183c8cc5069a96482d1613ddaabd63af9ad200a46002}{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+E\+V\+I\+T\+E\+M\+E\+N\+T} = 00000000000000000000000000000000000000000000000, 
+\hyperlink{main_8h_ac1ac0b5139148f65ad680183c8cc5069a1236f69cdae37c6a86c6b155c2af6932}{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+C\+A\+L\+L\+A\+G\+E} = 00000000000000000000000000000000000000000000000, 
+\hyperlink{main_8h_ac1ac0b5139148f65ad680183c8cc5069ad29a85255616d2b45fe301021a136b4d}{S\+O\+R\+T\+I\+R\+\_\+\+Z\+O\+N\+E\+\_\+\+D\+E\+P\+A\+R\+T} = 00000000000000000000000000000000000000000000000
+ \}
+\begin{DoxyCompactList}\small\item\em Coordonnées utiles de la coupe de 2014. \end{DoxyCompactList}\item 
+enum \hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur} \{ \hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7aeb840a0760d5c5122e980d507891c1a1}{J\+A\+U\+N\+E}, 
+\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7a92b33cebaccf73541ab06eca48a31e42}{R\+O\+U\+G\+E}, 
+\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7ada79224ad3dbcd24ea7399ac21660361}{C\+O\+U\+L\+E\+U\+R\+\_\+\+D\+E\+P\+A\+R\+T}, 
+\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7a791f7b5f2dcf1ce9fa1d5e0849fc7c21}{C\+O\+U\+L\+E\+U\+R\+\_\+\+O\+P\+P\+O\+S\+E}
+ \}
+\begin{DoxyCompactList}\small\item\em Les couleurs de départ. \end{DoxyCompactList}\item 
+enum \hyperlink{main_8h_ab7ef610d28524d4fea8449019e6add56}{Sens\+Mvt} \{ \hyperlink{main_8h_ab7ef610d28524d4fea8449019e6add56a48ad6d3e750f238b1e56b84a25c5d4b3}{M\+A\+R\+C\+H\+E\+\_\+\+A\+V\+A\+N\+T} = 0, 
+\hyperlink{main_8h_ab7ef610d28524d4fea8449019e6add56a8b40f185e6bf7e2fbddd615b3307af2e}{M\+A\+R\+C\+H\+E\+\_\+\+A\+R\+R\+I\+E\+R\+E} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em Sens du mouvement. \end{DoxyCompactList}\item 
+enum \hyperlink{main_8h_a56ce322c42cf3d49f192527547fa66e8}{Type\+Mvt} \{ \\*
+\hyperlink{main_8h_a56ce322c42cf3d49f192527547fa66e8a13bad3e47d312de4e96e43d580832740}{A\+V\+A\+N\+C\+E\+R} = M\+A\+R\+C\+H\+E\+\_\+\+A\+V\+A\+N\+T, 
+\hyperlink{main_8h_a56ce322c42cf3d49f192527547fa66e8a717c26b7276e48107bb28554aa047b6a}{R\+E\+C\+U\+L\+E\+R} = M\+A\+R\+C\+H\+E\+\_\+\+A\+R\+R\+I\+E\+R\+E, 
+\hyperlink{main_8h_a56ce322c42cf3d49f192527547fa66e8ad8679249a85c3f4e35a10707f2348a71}{B\+O\+U\+G\+E\+R}, 
+\hyperlink{main_8h_a56ce322c42cf3d49f192527547fa66e8a705a981107e0ea89ff36ae0707a97889}{C\+A\+L\+L\+E\+R}, 
+\\*
+\hyperlink{main_8h_a56ce322c42cf3d49f192527547fa66e8aa60aefb6e35a9e91c8495b3496c07574}{R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+H\+O\+R\+A\+I\+R\+E}, 
+\hyperlink{main_8h_a56ce322c42cf3d49f192527547fa66e8ac0c941bb8ef8f4c22c39b271b4ca4e54}{R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+N\+T\+I\+\_\+\+H\+O\+R\+A\+I\+R\+E}
+ \}
+\begin{DoxyCompactList}\small\item\em Type de mouvement pour le robot. \end{DoxyCompactList}\item 
+enum \hyperlink{main_8h_a521a835d7ce483bf46cb72d6466e5df1}{Type\+Vitesse} \{ \hyperlink{main_8h_a521a835d7ce483bf46cb72d6466e5df1a03ec61dcb3d38da8989d2c5cf84b6350}{R\+A\+P\+I\+D\+E}, 
+\hyperlink{main_8h_a521a835d7ce483bf46cb72d6466e5df1a46409c20ca1d9bfa747d432c4a3d5031}{L\+E\+N\+T}
+ \}
+\begin{DoxyCompactList}\small\item\em Vitesse de déplacement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8h_afd4f329c8efb45c0dfff44525047a0fa}{abs} (int n)
+\item 
+void \hyperlink{main_8h_a2c143f4a8047fdd4dca68638a9c1ee69}{verifier\+Position} ()
+\item 
+void \hyperlink{main_8h_a4466efa4297a1aec4eec11953a841d80}{verifier\+Sharp} ()
+\item 
+void \hyperlink{main_8h_a9cdbb57640e653883ab040c95d77d7c1}{faire} (\hyperlink{struct_action}{Action} mouvement)
+\item 
+void \hyperlink{main_8h_ad41f204645c88c5357d322ad89165006}{machine} ()
+\item 
+int \hyperlink{main_8h_a640300fda6d7b378ac47cd01871aafbf}{dans\+Table} (int, int)
+\item 
+void \hyperlink{main_8h_ac0da7b31151df13fae5c859da81d6ece}{aller} (\hyperlink{struct_pos}{Pos} position)
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Contient tout ce qui doit être inclus dans tout le projet. 
+
+Contient tout ce qui est à inclure globalement dans le projet.
+
+\begin{DoxyNote}{Note}
+Doit être inclu par tout les fichiers compilés.
+
+est à inclure dans tout les fichiers compilé du projet 
+\end{DoxyNote}
+
+
+Définition dans le fichier \hyperlink{main_8h_source}{main.\+h}.
+
+
+
+\subsection{Documentation des macros}
+\hypertarget{main_8h_a691d7e5feec11c1b812c442fd38e845b}{\index{main.\+h@{main.\+h}!I\+N\+T\+\_\+\+U\+A\+R\+T\+\_\+\+T\+X@{I\+N\+T\+\_\+\+U\+A\+R\+T\+\_\+\+T\+X}}
+\index{I\+N\+T\+\_\+\+U\+A\+R\+T\+\_\+\+T\+X@{I\+N\+T\+\_\+\+U\+A\+R\+T\+\_\+\+T\+X}!main.\+h@{main.\+h}}
+\subsubsection[{I\+N\+T\+\_\+\+U\+A\+R\+T\+\_\+\+T\+X}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+\_\+\+U\+A\+R\+T\+\_\+\+T\+X}}\label{main_8h_a691d7e5feec11c1b812c442fd38e845b}
+
+
+Définition à la ligne 116 du fichier main.\+h.
+
+\hypertarget{main_8h_a3d3bf5a2f88b1dba6c6bc13bf889c3cc}{\index{main.\+h@{main.\+h}!L\+A\+R\+G\+E\+U\+R@{L\+A\+R\+G\+E\+U\+R}}
+\index{L\+A\+R\+G\+E\+U\+R@{L\+A\+R\+G\+E\+U\+R}!main.\+h@{main.\+h}}
+\subsubsection[{L\+A\+R\+G\+E\+U\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+A\+R\+G\+E\+U\+R~324}}\label{main_8h_a3d3bf5a2f88b1dba6c6bc13bf889c3cc}
+
+
+Définition à la ligne 117 du fichier main.\+h.
+
+\hypertarget{main_8h_a598a3330b3c21701223ee0ca14316eca}{\index{main.\+h@{main.\+h}!P\+I@{P\+I}}
+\index{P\+I@{P\+I}!main.\+h@{main.\+h}}
+\subsubsection[{P\+I}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+I~3.\+1415}}\label{main_8h_a598a3330b3c21701223ee0ca14316eca}
+\begin{DoxyRefDesc}{A faire}
+\item[\hyperlink{todo__todo000004}{A faire}]À déplacer ou il y en a besoin \end{DoxyRefDesc}
+
+
+Définition à la ligne 18 du fichier main.\+h.
+
+
+
+\subsection{Documentation des définitions de type}
+\hypertarget{main_8h_ae149c304d2490d5120c530e2c9fdee4c}{\index{main.\+h@{main.\+h}!Angle@{Angle}}
+\index{Angle@{Angle}!main.\+h@{main.\+h}}
+\subsubsection[{Angle}]{\setlength{\rightskip}{0pt plus 5cm}typedef float {\bf Angle}}}\label{main_8h_ae149c304d2490d5120c530e2c9fdee4c}
+
+
+Angle en degré 
+
+
+
+Définition à la ligne 24 du fichier main.\+h.
+
+\hypertarget{main_8h_abff5a495dd3bf48b57d041dce0cf6e68}{\index{main.\+h@{main.\+h}!Coordonne\+\_\+mm@{Coordonne\+\_\+mm}}
+\index{Coordonne\+\_\+mm@{Coordonne\+\_\+mm}!main.\+h@{main.\+h}}
+\subsubsection[{Coordonne\+\_\+mm}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Coordonne\+\_\+mm}}}\label{main_8h_abff5a495dd3bf48b57d041dce0cf6e68}
+
+
+Coordonnées en mm. 
+
+
+
+Définition à la ligne 22 du fichier main.\+h.
+
+\hypertarget{main_8h_a203f209fd8e6ccce1cdf1f386c0dfbde}{\index{main.\+h@{main.\+h}!Distance\+\_\+mm@{Distance\+\_\+mm}}
+\index{Distance\+\_\+mm@{Distance\+\_\+mm}!main.\+h@{main.\+h}}
+\subsubsection[{Distance\+\_\+mm}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Distance\+\_\+mm}}}\label{main_8h_a203f209fd8e6ccce1cdf1f386c0dfbde}
+
+
+Distance en mm. 
+
+
+
+Définition à la ligne 23 du fichier main.\+h.
+
+\hypertarget{main_8h_a1e74595e68c7588392e08118304a6f6c}{\index{main.\+h@{main.\+h}!Pos@{Pos}}
+\index{Pos@{Pos}!main.\+h@{main.\+h}}
+\subsubsection[{Pos}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Pos} {\bf Pos}}}\label{main_8h_a1e74595e68c7588392e08118304a6f6c}
+
+
+Définition à la ligne 158 du fichier main.\+h.
+
+
+
+\subsection{Documentation du type de l'énumération}
+\hypertarget{main_8h_af6a258d8f3ee5206d682d799316314b1}{\index{main.\+h@{main.\+h}!bool@{bool}}
+\index{bool@{bool}!main.\+h@{main.\+h}}
+\subsubsection[{bool}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf bool}}}\label{main_8h_af6a258d8f3ee5206d682d799316314b1}
+
+
+Compatibilitée avec le C89… 
+
+\begin{Desc}
+\item[Valeurs énumérées]\par
+\begin{description}
+\index{false@{false}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!false@{false}}\item[{\em 
+\hypertarget{main_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}\label{main_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}
+}]\index{true@{true}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!true@{true}}\item[{\em 
+\hypertarget{main_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}{true}\label{main_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}
+}]\end{description}
+\end{Desc}
+
+
+Définition à la ligne 12 du fichier main.\+h.
+
+\hypertarget{main_8h_ac1ac0b5139148f65ad680183c8cc5069}{\index{main.\+h@{main.\+h}!C\+O\+O\+R\+D\+O\+N\+N\+E\+E\+S\+\_\+2014\+\_\+mm@{C\+O\+O\+R\+D\+O\+N\+N\+E\+E\+S\+\_\+2014\+\_\+mm}}
+\index{C\+O\+O\+R\+D\+O\+N\+N\+E\+E\+S\+\_\+2014\+\_\+mm@{C\+O\+O\+R\+D\+O\+N\+N\+E\+E\+S\+\_\+2014\+\_\+mm}!main.\+h@{main.\+h}}
+\subsubsection[{C\+O\+O\+R\+D\+O\+N\+N\+E\+E\+S\+\_\+2014\+\_\+mm}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\+O\+O\+R\+D\+O\+N\+N\+E\+E\+S\+\_\+2014\+\_\+mm}}}\label{main_8h_ac1ac0b5139148f65ad680183c8cc5069}
+
+
+Coordonnées utiles de la coupe de 2014. 
+
+\begin{DoxyNote}{Note}
+Le coin de référence est en haut à gauche 
+\end{DoxyNote}
+\begin{DoxyRefDesc}{A faire}
+\item[\hyperlink{todo__todo000005}{A faire}]distances à définir \end{DoxyRefDesc}
+\begin{Desc}
+\item[Valeurs énumérées]\par
+\begin{description}
+\index{C\+O\+T\+E@{C\+O\+T\+E}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!C\+O\+T\+E@{C\+O\+T\+E}}\item[{\em 
+\hypertarget{main_8h_ac1ac0b5139148f65ad680183c8cc5069a420933f648fcf67987521360bb40e8b0}{C\+O\+T\+E}\label{main_8h_ac1ac0b5139148f65ad680183c8cc5069a420933f648fcf67987521360bb40e8b0}
+}]\index{A\+V\+A\+N\+T@{A\+V\+A\+N\+T}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!A\+V\+A\+N\+T@{A\+V\+A\+N\+T}}\item[{\em 
+\hypertarget{main_8h_ac1ac0b5139148f65ad680183c8cc5069a9636f5bb497ae79ecf09091460c096ca}{A\+V\+A\+N\+T}\label{main_8h_ac1ac0b5139148f65ad680183c8cc5069a9636f5bb497ae79ecf09091460c096ca}
+}]\index{A\+R\+R\+I\+E\+R\+E@{A\+R\+R\+I\+E\+R\+E}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!A\+R\+R\+I\+E\+R\+E@{A\+R\+R\+I\+E\+R\+E}}\item[{\em 
+\hypertarget{main_8h_ac1ac0b5139148f65ad680183c8cc5069aa36ffbc408465c298fa641403c91972f}{A\+R\+R\+I\+E\+R\+E}\label{main_8h_ac1ac0b5139148f65ad680183c8cc5069aa36ffbc408465c298fa641403c91972f}
+}]\index{E\+S\+T@{E\+S\+T}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!E\+S\+T@{E\+S\+T}}\item[{\em 
+\hypertarget{main_8h_ac1ac0b5139148f65ad680183c8cc5069ab26f94a551dbfca6e0f4f6b5ad145c01}{E\+S\+T}\label{main_8h_ac1ac0b5139148f65ad680183c8cc5069ab26f94a551dbfca6e0f4f6b5ad145c01}
+}]\index{O\+U\+E\+S\+T@{O\+U\+E\+S\+T}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!O\+U\+E\+S\+T@{O\+U\+E\+S\+T}}\item[{\em 
+\hypertarget{main_8h_ac1ac0b5139148f65ad680183c8cc5069a564dddee8796eda21f35c76cb586aeb6}{O\+U\+E\+S\+T}\label{main_8h_ac1ac0b5139148f65ad680183c8cc5069a564dddee8796eda21f35c76cb586aeb6}
+}]\index{C\+O\+I\+N\+\_\+\+R\+O\+U\+G\+E@{C\+O\+I\+N\+\_\+\+R\+O\+U\+G\+E}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!C\+O\+I\+N\+\_\+\+R\+O\+U\+G\+E@{C\+O\+I\+N\+\_\+\+R\+O\+U\+G\+E}}\item[{\em 
+\hypertarget{main_8h_ac1ac0b5139148f65ad680183c8cc5069a911b84b637f2ec3155705a512b168746}{C\+O\+I\+N\+\_\+\+R\+O\+U\+G\+E}\label{main_8h_ac1ac0b5139148f65ad680183c8cc5069a911b84b637f2ec3155705a512b168746}
+}]\index{C\+O\+I\+N\+\_\+\+J\+A\+U\+N\+E@{C\+O\+I\+N\+\_\+\+J\+A\+U\+N\+E}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!C\+O\+I\+N\+\_\+\+J\+A\+U\+N\+E@{C\+O\+I\+N\+\_\+\+J\+A\+U\+N\+E}}\item[{\em 
+\hypertarget{main_8h_ac1ac0b5139148f65ad680183c8cc5069ae48da9c0ccb46631800ad7b96be37ca0}{C\+O\+I\+N\+\_\+\+J\+A\+U\+N\+E}\label{main_8h_ac1ac0b5139148f65ad680183c8cc5069ae48da9c0ccb46631800ad7b96be37ca0}
+}]\index{N\+O\+R\+D@{N\+O\+R\+D}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!N\+O\+R\+D@{N\+O\+R\+D}}\item[{\em 
+\hypertarget{main_8h_ac1ac0b5139148f65ad680183c8cc5069aa1f529db9f2d334d9c41dcc5f6f6e2a7}{N\+O\+R\+D}\label{main_8h_ac1ac0b5139148f65ad680183c8cc5069aa1f529db9f2d334d9c41dcc5f6f6e2a7}
+}]\index{S\+U\+D@{S\+U\+D}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!S\+U\+D@{S\+U\+D}}\item[{\em 
+\hypertarget{main_8h_ac1ac0b5139148f65ad680183c8cc5069ad2d3ceab3fce63bbe07882ab5a4e991e}{S\+U\+D}\label{main_8h_ac1ac0b5139148f65ad680183c8cc5069ad2d3ceab3fce63bbe07882ab5a4e991e}
+}]\index{B\+A\+C@{B\+A\+C}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!B\+A\+C@{B\+A\+C}}\item[{\em 
+\hypertarget{main_8h_ac1ac0b5139148f65ad680183c8cc5069ac19eb46f308123caf3fd8ed790c4ca93}{B\+A\+C}\label{main_8h_ac1ac0b5139148f65ad680183c8cc5069ac19eb46f308123caf3fd8ed790c4ca93}
+}]\index{D\+E\+P\+A\+R\+T@{D\+E\+P\+A\+R\+T}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!D\+E\+P\+A\+R\+T@{D\+E\+P\+A\+R\+T}}\item[{\em 
+\hypertarget{main_8h_ac1ac0b5139148f65ad680183c8cc5069abffa83cf654a02772eb472b536e4eb8e}{D\+E\+P\+A\+R\+T}\label{main_8h_ac1ac0b5139148f65ad680183c8cc5069abffa83cf654a02772eb472b536e4eb8e}
+}]\index{C\+O\+I\+N@{C\+O\+I\+N}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!C\+O\+I\+N@{C\+O\+I\+N}}\item[{\em 
+\hypertarget{main_8h_ac1ac0b5139148f65ad680183c8cc5069a3db211bb0d30db282da5a13b354f69c8}{C\+O\+I\+N}\label{main_8h_ac1ac0b5139148f65ad680183c8cc5069a3db211bb0d30db282da5a13b354f69c8}
+}]\index{A\+R\+B\+R\+E@{A\+R\+B\+R\+E}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!A\+R\+B\+R\+E@{A\+R\+B\+R\+E}}\item[{\em 
+\hypertarget{main_8h_ac1ac0b5139148f65ad680183c8cc5069a40c48f576db52a9bc39d4fdf5fcde371}{A\+R\+B\+R\+E}\label{main_8h_ac1ac0b5139148f65ad680183c8cc5069a40c48f576db52a9bc39d4fdf5fcde371}
+}]\index{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+E\+V\+I\+T\+E\+M\+E\+N\+T@{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+E\+V\+I\+T\+E\+M\+E\+N\+T}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+E\+V\+I\+T\+E\+M\+E\+N\+T@{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+E\+V\+I\+T\+E\+M\+E\+N\+T}}\item[{\em 
+\hypertarget{main_8h_ac1ac0b5139148f65ad680183c8cc5069a96482d1613ddaabd63af9ad200a46002}{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+E\+V\+I\+T\+E\+M\+E\+N\+T}\label{main_8h_ac1ac0b5139148f65ad680183c8cc5069a96482d1613ddaabd63af9ad200a46002}
+}]\index{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+C\+A\+L\+L\+A\+G\+E@{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+C\+A\+L\+L\+A\+G\+E}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+C\+A\+L\+L\+A\+G\+E@{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+C\+A\+L\+L\+A\+G\+E}}\item[{\em 
+\hypertarget{main_8h_ac1ac0b5139148f65ad680183c8cc5069a1236f69cdae37c6a86c6b155c2af6932}{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+C\+A\+L\+L\+A\+G\+E}\label{main_8h_ac1ac0b5139148f65ad680183c8cc5069a1236f69cdae37c6a86c6b155c2af6932}
+}]\index{S\+O\+R\+T\+I\+R\+\_\+\+Z\+O\+N\+E\+\_\+\+D\+E\+P\+A\+R\+T@{S\+O\+R\+T\+I\+R\+\_\+\+Z\+O\+N\+E\+\_\+\+D\+E\+P\+A\+R\+T}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!S\+O\+R\+T\+I\+R\+\_\+\+Z\+O\+N\+E\+\_\+\+D\+E\+P\+A\+R\+T@{S\+O\+R\+T\+I\+R\+\_\+\+Z\+O\+N\+E\+\_\+\+D\+E\+P\+A\+R\+T}}\item[{\em 
+\hypertarget{main_8h_ac1ac0b5139148f65ad680183c8cc5069ad29a85255616d2b45fe301021a136b4d}{S\+O\+R\+T\+I\+R\+\_\+\+Z\+O\+N\+E\+\_\+\+D\+E\+P\+A\+R\+T}\label{main_8h_ac1ac0b5139148f65ad680183c8cc5069ad29a85255616d2b45fe301021a136b4d}
+}]\end{description}
+\end{Desc}
+
+
+Définition à la ligne 30 du fichier main.\+h.
+
+\hypertarget{main_8h_aa304d0ca681f782b1d7735da33037dd7}{\index{main.\+h@{main.\+h}!Couleur@{Couleur}}
+\index{Couleur@{Couleur}!main.\+h@{main.\+h}}
+\subsubsection[{Couleur}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Couleur}}}\label{main_8h_aa304d0ca681f782b1d7735da33037dd7}
+
+
+Les couleurs de départ. 
+
+\begin{Desc}
+\item[Valeurs énumérées]\par
+\begin{description}
+\index{J\+A\+U\+N\+E@{J\+A\+U\+N\+E}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!J\+A\+U\+N\+E@{J\+A\+U\+N\+E}}\item[{\em 
+\hypertarget{main_8h_aa304d0ca681f782b1d7735da33037dd7aeb840a0760d5c5122e980d507891c1a1}{J\+A\+U\+N\+E}\label{main_8h_aa304d0ca681f782b1d7735da33037dd7aeb840a0760d5c5122e980d507891c1a1}
+}]\index{R\+O\+U\+G\+E@{R\+O\+U\+G\+E}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!R\+O\+U\+G\+E@{R\+O\+U\+G\+E}}\item[{\em 
+\hypertarget{main_8h_aa304d0ca681f782b1d7735da33037dd7a92b33cebaccf73541ab06eca48a31e42}{R\+O\+U\+G\+E}\label{main_8h_aa304d0ca681f782b1d7735da33037dd7a92b33cebaccf73541ab06eca48a31e42}
+}]\index{C\+O\+U\+L\+E\+U\+R\+\_\+\+D\+E\+P\+A\+R\+T@{C\+O\+U\+L\+E\+U\+R\+\_\+\+D\+E\+P\+A\+R\+T}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!C\+O\+U\+L\+E\+U\+R\+\_\+\+D\+E\+P\+A\+R\+T@{C\+O\+U\+L\+E\+U\+R\+\_\+\+D\+E\+P\+A\+R\+T}}\item[{\em 
+\hypertarget{main_8h_aa304d0ca681f782b1d7735da33037dd7ada79224ad3dbcd24ea7399ac21660361}{C\+O\+U\+L\+E\+U\+R\+\_\+\+D\+E\+P\+A\+R\+T}\label{main_8h_aa304d0ca681f782b1d7735da33037dd7ada79224ad3dbcd24ea7399ac21660361}
+}]\index{C\+O\+U\+L\+E\+U\+R\+\_\+\+O\+P\+P\+O\+S\+E@{C\+O\+U\+L\+E\+U\+R\+\_\+\+O\+P\+P\+O\+S\+E}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!C\+O\+U\+L\+E\+U\+R\+\_\+\+O\+P\+P\+O\+S\+E@{C\+O\+U\+L\+E\+U\+R\+\_\+\+O\+P\+P\+O\+S\+E}}\item[{\em 
+\hypertarget{main_8h_aa304d0ca681f782b1d7735da33037dd7a791f7b5f2dcf1ce9fa1d5e0849fc7c21}{C\+O\+U\+L\+E\+U\+R\+\_\+\+O\+P\+P\+O\+S\+E}\label{main_8h_aa304d0ca681f782b1d7735da33037dd7a791f7b5f2dcf1ce9fa1d5e0849fc7c21}
+}]\end{description}
+\end{Desc}
+
+
+Définition à la ligne 56 du fichier main.\+h.
+
+\hypertarget{main_8h_ab7ef610d28524d4fea8449019e6add56}{\index{main.\+h@{main.\+h}!Sens\+Mvt@{Sens\+Mvt}}
+\index{Sens\+Mvt@{Sens\+Mvt}!main.\+h@{main.\+h}}
+\subsubsection[{Sens\+Mvt}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Sens\+Mvt}}}\label{main_8h_ab7ef610d28524d4fea8449019e6add56}
+
+
+Sens du mouvement. 
+
+\begin{DoxyNote}{Note}
+les valeur 0 et 1 sont volontaire pour pouvoir faire !\+Sens\+Mvt 
+\end{DoxyNote}
+\begin{Desc}
+\item[Valeurs énumérées]\par
+\begin{description}
+\index{M\+A\+R\+C\+H\+E\+\_\+\+A\+V\+A\+N\+T@{M\+A\+R\+C\+H\+E\+\_\+\+A\+V\+A\+N\+T}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!M\+A\+R\+C\+H\+E\+\_\+\+A\+V\+A\+N\+T@{M\+A\+R\+C\+H\+E\+\_\+\+A\+V\+A\+N\+T}}\item[{\em 
+\hypertarget{main_8h_ab7ef610d28524d4fea8449019e6add56a48ad6d3e750f238b1e56b84a25c5d4b3}{M\+A\+R\+C\+H\+E\+\_\+\+A\+V\+A\+N\+T}\label{main_8h_ab7ef610d28524d4fea8449019e6add56a48ad6d3e750f238b1e56b84a25c5d4b3}
+}]\index{M\+A\+R\+C\+H\+E\+\_\+\+A\+R\+R\+I\+E\+R\+E@{M\+A\+R\+C\+H\+E\+\_\+\+A\+R\+R\+I\+E\+R\+E}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!M\+A\+R\+C\+H\+E\+\_\+\+A\+R\+R\+I\+E\+R\+E@{M\+A\+R\+C\+H\+E\+\_\+\+A\+R\+R\+I\+E\+R\+E}}\item[{\em 
+\hypertarget{main_8h_ab7ef610d28524d4fea8449019e6add56a8b40f185e6bf7e2fbddd615b3307af2e}{M\+A\+R\+C\+H\+E\+\_\+\+A\+R\+R\+I\+E\+R\+E}\label{main_8h_ab7ef610d28524d4fea8449019e6add56a8b40f185e6bf7e2fbddd615b3307af2e}
+}]\end{description}
+\end{Desc}
+
+
+Définition à la ligne 66 du fichier main.\+h.
+
+\hypertarget{main_8h_a56ce322c42cf3d49f192527547fa66e8}{\index{main.\+h@{main.\+h}!Type\+Mvt@{Type\+Mvt}}
+\index{Type\+Mvt@{Type\+Mvt}!main.\+h@{main.\+h}}
+\subsubsection[{Type\+Mvt}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Type\+Mvt}}}\label{main_8h_a56ce322c42cf3d49f192527547fa66e8}
+
+
+Type de mouvement pour le robot. 
+
+\begin{Desc}
+\item[Valeurs énumérées]\par
+\begin{description}
+\index{A\+V\+A\+N\+C\+E\+R@{A\+V\+A\+N\+C\+E\+R}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!A\+V\+A\+N\+C\+E\+R@{A\+V\+A\+N\+C\+E\+R}}\item[{\em 
+\hypertarget{main_8h_a56ce322c42cf3d49f192527547fa66e8a13bad3e47d312de4e96e43d580832740}{A\+V\+A\+N\+C\+E\+R}\label{main_8h_a56ce322c42cf3d49f192527547fa66e8a13bad3e47d312de4e96e43d580832740}
+}]côté plat en avant \index{R\+E\+C\+U\+L\+E\+R@{R\+E\+C\+U\+L\+E\+R}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!R\+E\+C\+U\+L\+E\+R@{R\+E\+C\+U\+L\+E\+R}}\item[{\em 
+\hypertarget{main_8h_a56ce322c42cf3d49f192527547fa66e8a717c26b7276e48107bb28554aa047b6a}{R\+E\+C\+U\+L\+E\+R}\label{main_8h_a56ce322c42cf3d49f192527547fa66e8a717c26b7276e48107bb28554aa047b6a}
+}]pointe en avant \index{B\+O\+U\+G\+E\+R@{B\+O\+U\+G\+E\+R}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!B\+O\+U\+G\+E\+R@{B\+O\+U\+G\+E\+R}}\item[{\em 
+\hypertarget{main_8h_a56ce322c42cf3d49f192527547fa66e8ad8679249a85c3f4e35a10707f2348a71}{B\+O\+U\+G\+E\+R}\label{main_8h_a56ce322c42cf3d49f192527547fa66e8ad8679249a85c3f4e35a10707f2348a71}
+}]sens pour avancer indiférent \index{C\+A\+L\+L\+E\+R@{C\+A\+L\+L\+E\+R}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!C\+A\+L\+L\+E\+R@{C\+A\+L\+L\+E\+R}}\item[{\em 
+\hypertarget{main_8h_a56ce322c42cf3d49f192527547fa66e8a705a981107e0ea89ff36ae0707a97889}{C\+A\+L\+L\+E\+R}\label{main_8h_a56ce322c42cf3d49f192527547fa66e8a705a981107e0ea89ff36ae0707a97889}
+}]pour caller le robot contre un mur et mettre à jour ses coordonées \index{R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+H\+O\+R\+A\+I\+R\+E@{R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+H\+O\+R\+A\+I\+R\+E}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+H\+O\+R\+A\+I\+R\+E@{R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+H\+O\+R\+A\+I\+R\+E}}\item[{\em 
+\hypertarget{main_8h_a56ce322c42cf3d49f192527547fa66e8aa60aefb6e35a9e91c8495b3496c07574}{R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+H\+O\+R\+A\+I\+R\+E}\label{main_8h_a56ce322c42cf3d49f192527547fa66e8aa60aefb6e35a9e91c8495b3496c07574}
+}]\index{R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+N\+T\+I\+\_\+\+H\+O\+R\+A\+I\+R\+E@{R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+N\+T\+I\+\_\+\+H\+O\+R\+A\+I\+R\+E}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+N\+T\+I\+\_\+\+H\+O\+R\+A\+I\+R\+E@{R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+N\+T\+I\+\_\+\+H\+O\+R\+A\+I\+R\+E}}\item[{\em 
+\hypertarget{main_8h_a56ce322c42cf3d49f192527547fa66e8ac0c941bb8ef8f4c22c39b271b4ca4e54}{R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+N\+T\+I\+\_\+\+H\+O\+R\+A\+I\+R\+E}\label{main_8h_a56ce322c42cf3d49f192527547fa66e8ac0c941bb8ef8f4c22c39b271b4ca4e54}
+}]\end{description}
+\end{Desc}
+
+
+Définition à la ligne 73 du fichier main.\+h.
+
+\hypertarget{main_8h_a521a835d7ce483bf46cb72d6466e5df1}{\index{main.\+h@{main.\+h}!Type\+Vitesse@{Type\+Vitesse}}
+\index{Type\+Vitesse@{Type\+Vitesse}!main.\+h@{main.\+h}}
+\subsubsection[{Type\+Vitesse}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Type\+Vitesse}}}\label{main_8h_a521a835d7ce483bf46cb72d6466e5df1}
+
+
+Vitesse de déplacement. 
+
+\begin{Desc}
+\item[Valeurs énumérées]\par
+\begin{description}
+\index{R\+A\+P\+I\+D\+E@{R\+A\+P\+I\+D\+E}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!R\+A\+P\+I\+D\+E@{R\+A\+P\+I\+D\+E}}\item[{\em 
+\hypertarget{main_8h_a521a835d7ce483bf46cb72d6466e5df1a03ec61dcb3d38da8989d2c5cf84b6350}{R\+A\+P\+I\+D\+E}\label{main_8h_a521a835d7ce483bf46cb72d6466e5df1a03ec61dcb3d38da8989d2c5cf84b6350}
+}]\index{L\+E\+N\+T@{L\+E\+N\+T}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!L\+E\+N\+T@{L\+E\+N\+T}}\item[{\em 
+\hypertarget{main_8h_a521a835d7ce483bf46cb72d6466e5df1a46409c20ca1d9bfa747d432c4a3d5031}{L\+E\+N\+T}\label{main_8h_a521a835d7ce483bf46cb72d6466e5df1a46409c20ca1d9bfa747d432c4a3d5031}
+}]\end{description}
+\end{Desc}
+
+
+Définition à la ligne 84 du fichier main.\+h.
+
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{main_8h_afd4f329c8efb45c0dfff44525047a0fa}{\index{main.\+h@{main.\+h}!abs@{abs}}
+\index{abs@{abs}!main.\+h@{main.\+h}}
+\subsubsection[{abs}]{\setlength{\rightskip}{0pt plus 5cm}int abs (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{main_8h_afd4f329c8efb45c0dfff44525047a0fa}
+\hypertarget{main_8h_ac0da7b31151df13fae5c859da81d6ece}{\index{main.\+h@{main.\+h}!aller@{aller}}
+\index{aller@{aller}!main.\+h@{main.\+h}}
+\subsubsection[{aller}]{\setlength{\rightskip}{0pt plus 5cm}void aller (
+\begin{DoxyParamCaption}
+\item[{{\bf Pos}}]{position}
+\end{DoxyParamCaption}
+)}}\label{main_8h_ac0da7b31151df13fae5c859da81d6ece}
+\hypertarget{main_8h_a640300fda6d7b378ac47cd01871aafbf}{\index{main.\+h@{main.\+h}!dans\+Table@{dans\+Table}}
+\index{dans\+Table@{dans\+Table}!main.\+h@{main.\+h}}
+\subsubsection[{dans\+Table}]{\setlength{\rightskip}{0pt plus 5cm}int dans\+Table (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{main_8h_a640300fda6d7b378ac47cd01871aafbf}
+\hypertarget{main_8h_a9cdbb57640e653883ab040c95d77d7c1}{\index{main.\+h@{main.\+h}!faire@{faire}}
+\index{faire@{faire}!main.\+h@{main.\+h}}
+\subsubsection[{faire}]{\setlength{\rightskip}{0pt plus 5cm}void faire (
+\begin{DoxyParamCaption}
+\item[{{\bf Action}}]{mouvement}
+\end{DoxyParamCaption}
+)}}\label{main_8h_a9cdbb57640e653883ab040c95d77d7c1}
+\hypertarget{main_8h_ad41f204645c88c5357d322ad89165006}{\index{main.\+h@{main.\+h}!machine@{machine}}
+\index{machine@{machine}!main.\+h@{main.\+h}}
+\subsubsection[{machine}]{\setlength{\rightskip}{0pt plus 5cm}void machine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8h_ad41f204645c88c5357d322ad89165006}
+\hypertarget{main_8h_a2c143f4a8047fdd4dca68638a9c1ee69}{\index{main.\+h@{main.\+h}!verifier\+Position@{verifier\+Position}}
+\index{verifier\+Position@{verifier\+Position}!main.\+h@{main.\+h}}
+\subsubsection[{verifier\+Position}]{\setlength{\rightskip}{0pt plus 5cm}void verifier\+Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8h_a2c143f4a8047fdd4dca68638a9c1ee69}
+\hypertarget{main_8h_a4466efa4297a1aec4eec11953a841d80}{\index{main.\+h@{main.\+h}!verifier\+Sharp@{verifier\+Sharp}}
+\index{verifier\+Sharp@{verifier\+Sharp}!main.\+h@{main.\+h}}
+\subsubsection[{verifier\+Sharp}]{\setlength{\rightskip}{0pt plus 5cm}void verifier\+Sharp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8h_a4466efa4297a1aec4eec11953a841d80}

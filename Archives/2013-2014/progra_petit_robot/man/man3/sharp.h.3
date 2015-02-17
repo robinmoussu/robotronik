@@ -1,0 +1,56 @@
+.TH "sharp.h" 3 "Jeudi 22 Mai 2014" "Petit Robot coupe 2014" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+sharp.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDISTANCE_PROXIMITE\fP   500"
+.br
+.ti -1c
+.RI "#define \fBDISTANCE_ARRET_URGENCE\fP   1500"
+.br
+.in -1c
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinitSharp\fP (void)"
+.br
+.ti -1c
+.RI "void \fBinitTimerSharp\fP ()"
+.br
+.ti -1c
+.RI "void \fB__attribute__\fP ((__interrupt__)) _ADC1Interrupt(void)"
+.br
+.in -1c
+.SH "Documentation des macros"
+.PP 
+.SS "#define DISTANCE_ARRET_URGENCE   1500"
+
+.PP
+Définition à la ligne 12 du fichier sharp\&.h\&.
+.SS "#define DISTANCE_PROXIMITE   500"
+
+.PP
+Définition à la ligne 11 du fichier sharp\&.h\&.
+.SH "Documentation des fonctions"
+.PP 
+.SS "void __attribute__ ((__interrupt__))"
+
+.SS "void initSharp (void)"
+
+.PP
+Définition à la ligne 23 du fichier sharp\&.c\&.
+.SS "void initTimerSharp ()"
+
+.PP
+Définition à la ligne 61 du fichier sharp\&.c\&.
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Petit Robot coupe 2014 à partir du code source\&.

@@ -1,0 +1,141 @@
+.TH "sharp.c" 3 "Jeudi 22 Mai 2014" "Petit Robot coupe 2014" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+sharp.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'sharp\&.h'\fP
+.br
+\fC#include 'main\&.h'\fP
+.br
+\fC#include 'comAsser\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSAMP_BUFF_SIZE\fP   8"
+.br
+.ti -1c
+.RI "#define \fBNUM_CHS2SCAN\fP   1"
+.br
+.in -1c
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinitSharp\fP (void)"
+.br
+.ti -1c
+.RI "void \fBinitTimerSharp\fP ()"
+.br
+.ti -1c
+.RI "void \fB__attribute__\fP ((interrupt, no_auto_psv))"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "volatile int \fBstopSharp\fP"
+.br
+.ti -1c
+.RI "volatile int \fBrequestGetXY\fP"
+.br
+.ti -1c
+.RI "volatile int \fBdoneAsser\fP"
+.br
+.ti -1c
+.RI "volatile int \fBrequestGetAlpha\fP"
+.br
+.ti -1c
+.RI "volatile char \fBforceIgnoreSharp\fP"
+.br
+.ti -1c
+.RI "int \fBain0Buff\fP [\fBSAMP_BUFF_SIZE\fP]"
+.br
+.ti -1c
+.RI "int \fBain1Buff\fP [\fBSAMP_BUFF_SIZE\fP]"
+.br
+.ti -1c
+.RI "int \fBscanCounter\fP =0"
+.br
+.ti -1c
+.RI "int \fBsampleCounter\fP =0"
+.br
+.ti -1c
+.RI "int \fBg_distance\fP"
+.br
+.in -1c
+.SH "Documentation des macros"
+.PP 
+.SS "#define NUM_CHS2SCAN   1"
+
+.PP
+Définition à la ligne 9 du fichier sharp\&.c\&.
+.SS "#define SAMP_BUFF_SIZE   8"
+
+.PP
+Définition à la ligne 8 du fichier sharp\&.c\&.
+.SH "Documentation des fonctions"
+.PP 
+.SS "void __attribute__ ((interrupt, no_auto_psv))"
+
+.PP
+Définition à la ligne 84 du fichier sharp\&.c\&.
+.SS "void initSharp (void)"
+
+.PP
+Définition à la ligne 23 du fichier sharp\&.c\&.
+.SS "void initTimerSharp ()"
+
+.PP
+Définition à la ligne 61 du fichier sharp\&.c\&.
+.SH "Documentation des variables"
+.PP 
+.SS "int ain0Buff[\fBSAMP_BUFF_SIZE\fP]"
+
+.PP
+Définition à la ligne 76 du fichier sharp\&.c\&.
+.SS "int ain1Buff[\fBSAMP_BUFF_SIZE\fP]"
+
+.PP
+Définition à la ligne 77 du fichier sharp\&.c\&.
+.SS "volatile int doneAsser"
+
+.PP
+Définition à la ligne 11 du fichier main_petit_robot\&.c\&.
+.SS "volatile char forceIgnoreSharp"
+
+.PP
+Définition à la ligne 17 du fichier main_petit_robot\&.c\&.
+.SS "int g_distance"
+
+.PP
+Définition à la ligne 82 du fichier sharp\&.c\&.
+.SS "volatile int requestGetAlpha"
+
+.PP
+Définition à la ligne 14 du fichier main_petit_robot\&.c\&.
+.SS "volatile int requestGetXY"
+
+.PP
+Définition à la ligne 13 du fichier main_petit_robot\&.c\&.
+.SS "int sampleCounter =0"
+
+.PP
+Définition à la ligne 80 du fichier sharp\&.c\&.
+.SS "int scanCounter =0"
+
+.PP
+Définition à la ligne 79 du fichier sharp\&.c\&.
+.SS "volatile int stopSharp"
+
+.PP
+Définition à la ligne 12 du fichier main_petit_robot\&.c\&.
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Petit Robot coupe 2014 à partir du code source\&.

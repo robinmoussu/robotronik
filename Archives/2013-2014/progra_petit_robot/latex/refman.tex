@@ -1,0 +1,211 @@
+\documentclass[twoside]{book}
+
+% Packages required by doxygen
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{fixltx2e}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage[table]{xcolor}
+
+% NLS support packages
+\usepackage[french]{babel}
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Page & text layout
+\usepackage{geometry}
+\geometry{%
+  a4paper,%
+  top=2.5cm,%
+  bottom=2.5cm,%
+  left=2.5cm,%
+  right=2.5cm%
+}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.2cm}
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Généré le Samedi 24 Mai 2014 12\+:35\+:29 pour Gros robot pour la coupe de France 2014 par Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Généré le Samedi 24 Mai 2014 12\+:35\+:29 pour Gros robot pour la coupe de France 2014 par Doxygen }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\chaptermark}[1]{%
+  \markboth{#1}{}%
+}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+% Hyperlinks (required, but should be loaded last)
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \usepackage[ps2pdf,pagebackref=true]{hyperref}
+\fi
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false,
+             bookmarks=true,
+             bookmarksnumbered=true,
+             pdfencoding=unicode
+            }
+\pagenumbering{roman}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\Large Gros robot pour la coupe de France 2014 \\[1ex]\large géréré le 10 Mai (révision 776) }\\
+\vspace*{1cm}
+{\large Généré par Doxygen 1.8.7}\\
+\vspace*{0.5cm}
+{\small Samedi 24 Mai 2014 12:35:29}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\chapter{Programation du petit robot pour la coupe 2014}
+\label{index}\hypertarget{index}{}\input{index}
+\chapter{documentation}
+\label{md_documentation}
+\hypertarget{md_documentation}{}
+\input{md_documentation}
+\chapter{Liste des choses à faire}
+\label{todo}
+\hypertarget{todo}{}
+\input{todo}
+\chapter{Index des structures de données}
+\input{annotated}
+\chapter{Index des fichiers}
+\input{files}
+\chapter{Documentation des structures de données}
+\input{struct_action}
+\input{struct_info_mvt}
+\input{struct_objectif}
+\input{struct_pos}
+\input{union_t__divided_long}
+\input{union_t__divided_u_long}
+\input{struct_tr4_char}
+\input{struct_tr_alpha}
+\input{union_trame32}
+\input{union_trame_asser}
+\input{struct_tr_couleur}
+\input{struct_tr_default}
+\input{struct_tr_delta}
+\input{struct_tr_gen_short}
+\input{struct_tr_pos}
+\input{struct_tr_short}
+\input{union_tr_xbee}
+\chapter{Documentation des fichiers}
+\input{ailleurs_8c}
+\input{ailleurs_8h}
+\input{bits_configuration_8h}
+\input{com_asser_8c}
+\input{com_asser_8h}
+\input{com_xbee_8c}
+\input{com_xbee_8h}
+\input{coordonees_8c}
+\input{coordonees_8h}
+\input{debug_8c}
+\input{debug_8h}
+\input{documentation_8md}
+\input{init_8c}
+\input{init_8h}
+\input{main_8h}
+\input{main__petit__robot_8c}
+\input{mouvement_8c}
+\input{mouvement_8h}
+\input{sharp_8c}
+\input{sharp_8h}
+\input{strategie_8c}
+\input{strategie_8h}
+\input{uart_8c}
+\input{uart_8h}
+\input{uart__xbee_8c}
+\input{uart__xbee_8h}
+%--- End generated contents ---
+
+% Index
+\newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Index}
+\printindex
+
+\end{document}

@@ -1,0 +1,89 @@
+.TH "uart.h" 3 "Jeudi 22 Mai 2014" "Petit Robot coupe 2014" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+uart.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDONE\fP   0x10"
+.br
+.ti -1c
+.RI "#define \fBALPHA_GET\fP   0xAA"
+.br
+.ti -1c
+.RI "#define \fBTX_BUFFER_SIZE\fP   64"
+.br
+.ti -1c
+.RI "#define \fBsendAsser\fP(v)   \fBsend_short\fP(v)"
+.br
+.ti -1c
+.RI "#define \fBsendAsser32\fP(v)   \fBsend_long\fP(v)"
+.br
+.in -1c
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "int \fBUART_putc\fP (unsigned char c)"
+.br
+.ti -1c
+.RI "void \fBsendDone\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsendDerapage\fP (void)"
+.br
+.ti -1c
+.RI "int \fBsend_long\fP (long message)"
+.br
+.ti -1c
+.RI "int \fBsend_short\fP (short message)"
+.br
+.in -1c
+.SH "Documentation des macros"
+.PP 
+.SS "#define ALPHA_GET   0xAA"
+
+.PP
+Définition à la ligne 13 du fichier uart\&.h\&.
+.SS "#define DONE   0x10"
+
+.PP
+Définition à la ligne 12 du fichier uart\&.h\&.
+.SS "#define sendAsser(v)   \fBsend_short\fP(v)"
+
+.PP
+Définition à la ligne 22 du fichier uart\&.h\&.
+.SS "#define sendAsser32(v)   \fBsend_long\fP(v)"
+
+.PP
+Définition à la ligne 23 du fichier uart\&.h\&.
+.SS "#define TX_BUFFER_SIZE   64"
+
+.PP
+Définition à la ligne 15 du fichier uart\&.h\&.
+.SH "Documentation des fonctions"
+.PP 
+.SS "int send_long (longmessage)"
+
+.PP
+Définition à la ligne 46 du fichier uart\&.c\&.
+.SS "int send_short (shortmessage)"
+
+.PP
+Définition à la ligne 54 du fichier uart\&.c\&.
+.SS "void sendDerapage (void)"
+
+.SS "void sendDone (void)"
+
+.SS "int UART_putc (unsigned charc)"
+
+.PP
+Définition à la ligne 21 du fichier uart\&.c\&.
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Petit Robot coupe 2014 à partir du code source\&.

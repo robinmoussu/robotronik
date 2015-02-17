@@ -1,0 +1,55 @@
+.TH "coordonees.h" 3 "Jeudi 22 Mai 2014" "Petit Robot coupe 2014" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+coordonees.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'main\&.h'\fP
+.br
+
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "\fBCoordonne_mm\fP \fBcalculX\fP (\fBCouleur\fP c, \fBCoordonne_mm\fP origine, \fBCoordonne_mm\fP relativeX)"
+.br
+.ti -1c
+.RI "\fBCouleur\fP \fBcOppose\fP (\fBCouleur\fP c)"
+.br
+.in -1c
+.SH "Documentation des fonctions"
+.PP 
+.SS "\fBCoordonne_mm\fP calculX (\fBCouleur\fPc, \fBCoordonne_mm\fPorigine, \fBCoordonne_mm\fPrelativeX)"
+Renvoi la position en absolu que l'ont souhaite atteindre à partir d'une position relative\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIc\fP La couleur qui sert de côté de référence\&. 
+.RE
+.PP
+\fBVoir également:\fP
+.RS 4
+\fBcOppose\fP 
+.RE
+.PP
+
+.PP
+Définition à la ligne 3 du fichier coordonees\&.c\&.
+.SS "\fBCouleur\fP cOppose (\fBCouleur\fPc)"
+Renvoie la couleur opposé à celle du départ\&. 
+.PP
+\fBNote:\fP
+.RS 4
+On pourrait tout à fait utiliser la syntaxe '!nextX' mais qui est moins lisible\&. 
+.PP
+La même chose sous forme de macro pour optimisation : #define C_OPPOSE(c) ((c) == JAUNE) ? ROUGE : JAUNE) 
+.RE
+.PP
+
+.PP
+Définition à la ligne 12 du fichier coordonees\&.c\&.
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Petit Robot coupe 2014 à partir du code source\&.

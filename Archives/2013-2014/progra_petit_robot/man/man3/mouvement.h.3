@@ -1,0 +1,88 @@
+.TH "mouvement.h" 3 "Jeudi 22 Mai 2014" "Petit Robot coupe 2014" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+mouvement.h \- 
+.PP
+Contient les fonctions qui permettent de controler les déplacement du robot\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'main\&.h'\fP
+.br
+\fC#include 'ailleurs\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBANGLE_MAX\fP   1"
+.br
+.RI "\fIAngle maximum considéré comme étant valide\&. \fP"
+.in -1c
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBcaller\fP (\fBCoordonne_mm\fP postCallageX, \fBCoordonne_mm\fP postCallageY)"
+.br
+.ti -1c
+.RI "void \fBbouger\fP (\fBCoordonne_mm\fP x, \fBCoordonne_mm\fP y)"
+.br
+.ti -1c
+.RI "void \fBavancer\fP (\fBCoordonne_mm\fP x, \fBCoordonne_mm\fP y)"
+.br
+.ti -1c
+.RI "void \fBreculer\fP (\fBCoordonne_mm\fP x, \fBCoordonne_mm\fP y)"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+Contient les fonctions qui permettent de controler les déplacement du robot\&. 
+
+
+.PP
+\fBNote:\fP
+.RS 4
+fait le lien avec la carte asser 
+.RE
+.PP
+\fBA faire\fP
+.RS 4
+Les fonctions bouger, avancer et reculer sont trop compliquée et devraient être simplifié 
+.RE
+.PP
+
+.PP
+Définition dans le fichier \fBmouvement\&.h\fP\&.
+.SH "Documentation des macros"
+.PP 
+.SS "#define ANGLE_MAX   1"
+
+.PP
+Angle maximum considéré comme étant valide\&. 
+.PP
+Définition à la ligne 32 du fichier mouvement\&.h\&.
+.SH "Documentation des fonctions"
+.PP 
+.SS "void avancer (\fBCoordonne_mm\fPx, \fBCoordonne_mm\fPy)"
+Déplace le robot en direction d'une point en dont les coordonnées sont absolues par rapport à la table\&. 
+.PP
+Définition à la ligne 38 du fichier mouvement\&.c\&.
+.SS "void bouger (\fBCoordonne_mm\fPx, \fBCoordonne_mm\fPy)"
+Déplace le robot en direction d'une point en dont les coordonnées sont absolues par rapport à la table\&. 
+.PP
+Définition à la ligne 23 du fichier mouvement\&.c\&.
+.SS "void caller (\fBCoordonne_mm\fPpostCallageX, \fBCoordonne_mm\fPpostCallageY)"
+Permet de réinitialiser les coordonnées du robot\&. Avance le robot sur une courte distance jusqu'à ce qu'il rentre en butée puis enregistre les coordonnées\&. de la nouvelle position dans l'asser\&. 
+.PP
+Définition à la ligne 16 du fichier mouvement\&.c\&.
+.SS "void reculer (\fBCoordonne_mm\fPx, \fBCoordonne_mm\fPy)"
+Déplace le robot en direction d'une point en dont les coordonnées sont absolues par rapport à la table\&. 
+.PP
+Définition à la ligne 58 du fichier mouvement\&.c\&.
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Petit Robot coupe 2014 à partir du code source\&.

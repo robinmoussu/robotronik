@@ -1,0 +1,75 @@
+\hypertarget{strat_xC3_xA9gie_8c}{\section{Référence du fichier stratégie.\+c}
+\label{strat_xC3_xA9gie_8c}\index{stratégie.\+c@{stratégie.\+c}}
+}
+{\ttfamily \#include \char`\"{}strategie.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ailleurs.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}mouvement.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}coordonees.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}debug.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}com\+Asser.\+h\char`\"{}}\\*
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{strat_xC3_xA9gie_8c_a122794a2718e45156bd9f3ef39a5fb88}{parcourt} (\hyperlink{struct_objectif}{Objectif} obj\+Petit\+Robot\mbox{[}$\,$\mbox{]}, int nb\+Obj, \hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur} couleur)
+\begin{DoxyCompactList}\small\item\em Toute la statégie du petit robot. \end{DoxyCompactList}\item 
+void \hyperlink{strat_xC3_xA9gie_8c_afc8fd324d8ab522c0a87c877cec5e8c7}{evitement\+Obstacle} ()
+\begin{DoxyCompactList}\small\item\em Stratégie d'évitement d'obstacle. \end{DoxyCompactList}\item 
+void \hyperlink{strat_xC3_xA9gie_8c_a184eb64c504880f5d9ad47dd92934c54}{cherche\+Objectif} (\hyperlink{struct_objectif}{Objectif} obj\mbox{[}$\,$\mbox{]}, int nb\+Obj)
+\begin{DoxyCompactList}\small\item\em Cherche le prochain objectif et débute le déplacement vers lui Le prochain objectif est soit l'objectif en cour si il y a eu une interruption de parcourt (tel qu'un obstactle), soit l'objectif suivant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{strat_xC3_xA9gie_8c_a184eb64c504880f5d9ad47dd92934c54}{\index{stratégie.\+c@{stratégie.\+c}!cherche\+Objectif@{cherche\+Objectif}}
+\index{cherche\+Objectif@{cherche\+Objectif}!stratégie.\+c@{stratégie.\+c}}
+\subsubsection[{cherche\+Objectif}]{\setlength{\rightskip}{0pt plus 5cm}void cherche\+Objectif (
+\begin{DoxyParamCaption}
+\item[{{\bf Objectif}}]{obj\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{nb\+Obj}
+\end{DoxyParamCaption}
+)}}\label{strat_xC3_xA9gie_8c_a184eb64c504880f5d9ad47dd92934c54}
+
+
+Cherche le prochain objectif et débute le déplacement vers lui Le prochain objectif est soit l'objectif en cour si il y a eu une interruption de parcourt (tel qu'un obstactle), soit l'objectif suivant. 
+
+\begin{DoxyNote}{Note}
+Vérifie qu'il reste des objectifs. 
+\end{DoxyNote}
+
+
+Définition à la ligne 71 du fichier stratégie.\+c.
+
+\hypertarget{strat_xC3_xA9gie_8c_afc8fd324d8ab522c0a87c877cec5e8c7}{\index{stratégie.\+c@{stratégie.\+c}!evitement\+Obstacle@{evitement\+Obstacle}}
+\index{evitement\+Obstacle@{evitement\+Obstacle}!stratégie.\+c@{stratégie.\+c}}
+\subsubsection[{evitement\+Obstacle}]{\setlength{\rightskip}{0pt plus 5cm}void evitement\+Obstacle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{strat_xC3_xA9gie_8c_afc8fd324d8ab522c0a87c877cec5e8c7}
+
+
+Stratégie d'évitement d'obstacle. 
+
+\begin{DoxyWarning}{Avertissement}
+Cette fonction est actuellement blocante. 
+\end{DoxyWarning}
+
+
+Définition à la ligne 49 du fichier stratégie.\+c.
+
+\hypertarget{strat_xC3_xA9gie_8c_a122794a2718e45156bd9f3ef39a5fb88}{\index{stratégie.\+c@{stratégie.\+c}!parcourt@{parcourt}}
+\index{parcourt@{parcourt}!stratégie.\+c@{stratégie.\+c}}
+\subsubsection[{parcourt}]{\setlength{\rightskip}{0pt plus 5cm}void parcourt (
+\begin{DoxyParamCaption}
+\item[{{\bf Objectif}}]{obj\+Petit\+Robot\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{nb\+Obj, }
+\item[{{\bf Couleur}}]{couleur}
+\end{DoxyParamCaption}
+)}}\label{strat_xC3_xA9gie_8c_a122794a2718e45156bd9f3ef39a5fb88}
+
+
+Toute la statégie du petit robot. 
+
+
+
+Définition à la ligne 9 du fichier stratégie.\+c.
+

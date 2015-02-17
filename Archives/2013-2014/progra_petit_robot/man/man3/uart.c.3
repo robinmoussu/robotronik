@@ -1,0 +1,77 @@
+.TH "uart.c" 3 "Jeudi 22 Mai 2014" "Petit Robot coupe 2014" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+uart.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'main\&.h'\fP
+.br
+\fC#include 'comAsser\&.h'\fP
+.br
+
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "int \fBUART_putc\fP (unsigned char c)"
+.br
+.ti -1c
+.RI "int \fBsend_long\fP (long message)"
+.br
+.ti -1c
+.RI "int \fBsend_short\fP (short message)"
+.br
+.ti -1c
+.RI "void \fB__attribute__\fP ((interrupt, auto_psv))"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "volatile unsigned char \fBtxBuffer\fP [\fBTX_BUFFER_SIZE\fP]"
+.br
+.ti -1c
+.RI "volatile short \fBindexTxBuffer\fP"
+.br
+.ti -1c
+.RI "volatile short \fBtxBufferLength\fP"
+.br
+.in -1c
+.SH "Documentation des fonctions"
+.PP 
+.SS "void __attribute__ ((interrupt, auto_psv))"
+
+.PP
+Définition à la ligne 61 du fichier uart\&.c\&.
+.SS "int send_long (longmessage)"
+
+.PP
+Définition à la ligne 46 du fichier uart\&.c\&.
+.SS "int send_short (shortmessage)"
+
+.PP
+Définition à la ligne 54 du fichier uart\&.c\&.
+.SS "int UART_putc (unsigned charc)"
+
+.PP
+Définition à la ligne 21 du fichier uart\&.c\&.
+.SH "Documentation des variables"
+.PP 
+.SS "volatile short indexTxBuffer"
+
+.PP
+Définition à la ligne 23 du fichier main_petit_robot\&.c\&.
+.SS "volatile unsigned char txBuffer[\fBTX_BUFFER_SIZE\fP]"
+
+.PP
+Définition à la ligne 22 du fichier main_petit_robot\&.c\&.
+.SS "volatile short txBufferLength"
+
+.PP
+Définition à la ligne 24 du fichier main_petit_robot\&.c\&.
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Petit Robot coupe 2014 à partir du code source\&.

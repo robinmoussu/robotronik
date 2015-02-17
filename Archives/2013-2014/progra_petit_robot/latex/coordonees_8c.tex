@@ -1,0 +1,59 @@
+\hypertarget{coordonees_8c}{\section{Référence du fichier coordonees.\+c}
+\label{coordonees_8c}\index{coordonees.\+c@{coordonees.\+c}}
+}
+{\ttfamily \#include \char`\"{}coordonees.\+h\char`\"{}}\\*
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{main_8h_abff5a495dd3bf48b57d041dce0cf6e68}{Coordonne\+\_\+mm} \hyperlink{coordonees_8c_a4d7afd8c2e97c17c936d79977bab5f67}{calcul\+X} (\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur} c, \hyperlink{main_8h_abff5a495dd3bf48b57d041dce0cf6e68}{Coordonne\+\_\+mm} origine, \hyperlink{main_8h_abff5a495dd3bf48b57d041dce0cf6e68}{Coordonne\+\_\+mm} relative\+X)
+\begin{DoxyCompactList}\small\item\em Renvoi la position en absolu que l'ont souhaite atteindre à partir d'une position relative. \end{DoxyCompactList}\item 
+\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur} \hyperlink{coordonees_8c_a4cac285ae60125ac9bbfe38b5b4d1ea7}{c\+Oppose} (\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur} c)
+\begin{DoxyCompactList}\small\item\em Renvoie la couleur opposé à celle du départ. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{coordonees_8c_a4d7afd8c2e97c17c936d79977bab5f67}{\index{coordonees.\+c@{coordonees.\+c}!calcul\+X@{calcul\+X}}
+\index{calcul\+X@{calcul\+X}!coordonees.\+c@{coordonees.\+c}}
+\subsubsection[{calcul\+X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Coordonne\+\_\+mm} calcul\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf Couleur}}]{c, }
+\item[{{\bf Coordonne\+\_\+mm}}]{origine, }
+\item[{{\bf Coordonne\+\_\+mm}}]{relative\+X}
+\end{DoxyParamCaption}
+)}}\label{coordonees_8c_a4d7afd8c2e97c17c936d79977bab5f67}
+
+
+Renvoi la position en absolu que l'ont souhaite atteindre à partir d'une position relative. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em c} & La couleur qui sert de côté de référence. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{coordonees_8h_a4cac285ae60125ac9bbfe38b5b4d1ea7}{c\+Oppose} 
+\end{DoxySeeAlso}
+
+
+Définition à la ligne 3 du fichier coordonees.\+c.
+
+\hypertarget{coordonees_8c_a4cac285ae60125ac9bbfe38b5b4d1ea7}{\index{coordonees.\+c@{coordonees.\+c}!c\+Oppose@{c\+Oppose}}
+\index{c\+Oppose@{c\+Oppose}!coordonees.\+c@{coordonees.\+c}}
+\subsubsection[{c\+Oppose}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Couleur} c\+Oppose (
+\begin{DoxyParamCaption}
+\item[{{\bf Couleur}}]{c}
+\end{DoxyParamCaption}
+)}}\label{coordonees_8c_a4cac285ae60125ac9bbfe38b5b4d1ea7}
+
+
+Renvoie la couleur opposé à celle du départ. 
+
+\begin{DoxyNote}{Note}
+On pourrait tout à fait utiliser la syntaxe \char`\"{}!next\+X\char`\"{} mais qui est moins lisible. 
+
+La même chose sous forme de macro pour optimisation \+: \#define C\+\_\+\+O\+P\+P\+O\+S\+E(c) ((c) == J\+A\+U\+N\+E) ? R\+O\+U\+G\+E \+: J\+A\+U\+N\+E) 
+\end{DoxyNote}
+
+
+Définition à la ligne 12 du fichier coordonees.\+c.
+

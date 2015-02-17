@@ -1,0 +1,121 @@
+\hypertarget{mouvement_8h}{\section{Référence du fichier mouvement.\+h}
+\label{mouvement_8h}\index{mouvement.\+h@{mouvement.\+h}}
+}
+
+
+Contient les fonctions qui permettent de controler les déplacement du robot.  
+
+
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ailleurs.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{mouvement_8h_a9f6b452e529861368b0acfd411437c71}{A\+N\+G\+L\+E\+\_\+\+M\+A\+X}~1
+\begin{DoxyCompactList}\small\item\em Angle maximum considéré comme étant valide. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{mouvement_8h_a2cdc81580e8931b25005042df81fc0ca}{caller} (\hyperlink{main_8h_abff5a495dd3bf48b57d041dce0cf6e68}{Coordonne\+\_\+mm} post\+Callage\+X, \hyperlink{main_8h_abff5a495dd3bf48b57d041dce0cf6e68}{Coordonne\+\_\+mm} post\+Callage\+Y)
+\begin{DoxyCompactList}\small\item\em Permet de réinitialiser les coordonnées du robot. \end{DoxyCompactList}\item 
+void \hyperlink{mouvement_8h_afd23e8bf698ad509901bf7679691e8d5}{bouger} (\hyperlink{main_8h_abff5a495dd3bf48b57d041dce0cf6e68}{Coordonne\+\_\+mm} x, \hyperlink{main_8h_abff5a495dd3bf48b57d041dce0cf6e68}{Coordonne\+\_\+mm} y)
+\begin{DoxyCompactList}\small\item\em Déplace le robot en direction d'une point en dont les coordonnées sont absolues par rapport à la table. \end{DoxyCompactList}\item 
+void \hyperlink{mouvement_8h_a1db1ac8c5929dea388037016c259975b}{avancer} (\hyperlink{main_8h_abff5a495dd3bf48b57d041dce0cf6e68}{Coordonne\+\_\+mm} x, \hyperlink{main_8h_abff5a495dd3bf48b57d041dce0cf6e68}{Coordonne\+\_\+mm} y)
+\begin{DoxyCompactList}\small\item\em Déplace le robot en direction d'une point en dont les coordonnées sont absolues par rapport à la table. \end{DoxyCompactList}\item 
+void \hyperlink{mouvement_8h_a46464501b61623272ab0849ca3f115a0}{reculer} (\hyperlink{main_8h_abff5a495dd3bf48b57d041dce0cf6e68}{Coordonne\+\_\+mm} x, \hyperlink{main_8h_abff5a495dd3bf48b57d041dce0cf6e68}{Coordonne\+\_\+mm} y)
+\begin{DoxyCompactList}\small\item\em Déplace le robot en direction d'une point en dont les coordonnées sont absolues par rapport à la table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Contient les fonctions qui permettent de controler les déplacement du robot. 
+
+\begin{DoxyNote}{Note}
+fait le lien avec la carte asser 
+\end{DoxyNote}
+\begin{DoxyRefDesc}{A faire}
+\item[\hyperlink{todo__todo000006}{A faire}]Les fonctions bouger, avancer et reculer sont trop compliquée et devraient être simplifié \end{DoxyRefDesc}
+
+
+Définition dans le fichier \hyperlink{mouvement_8h_source}{mouvement.\+h}.
+
+
+
+\subsection{Documentation des macros}
+\hypertarget{mouvement_8h_a9f6b452e529861368b0acfd411437c71}{\index{mouvement.\+h@{mouvement.\+h}!A\+N\+G\+L\+E\+\_\+\+M\+A\+X@{A\+N\+G\+L\+E\+\_\+\+M\+A\+X}}
+\index{A\+N\+G\+L\+E\+\_\+\+M\+A\+X@{A\+N\+G\+L\+E\+\_\+\+M\+A\+X}!mouvement.\+h@{mouvement.\+h}}
+\subsubsection[{A\+N\+G\+L\+E\+\_\+\+M\+A\+X}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+G\+L\+E\+\_\+\+M\+A\+X~1}}\label{mouvement_8h_a9f6b452e529861368b0acfd411437c71}
+
+
+Angle maximum considéré comme étant valide. 
+
+
+
+Définition à la ligne 32 du fichier mouvement.\+h.
+
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{mouvement_8h_a1db1ac8c5929dea388037016c259975b}{\index{mouvement.\+h@{mouvement.\+h}!avancer@{avancer}}
+\index{avancer@{avancer}!mouvement.\+h@{mouvement.\+h}}
+\subsubsection[{avancer}]{\setlength{\rightskip}{0pt plus 5cm}void avancer (
+\begin{DoxyParamCaption}
+\item[{{\bf Coordonne\+\_\+mm}}]{x, }
+\item[{{\bf Coordonne\+\_\+mm}}]{y}
+\end{DoxyParamCaption}
+)}}\label{mouvement_8h_a1db1ac8c5929dea388037016c259975b}
+
+
+Déplace le robot en direction d'une point en dont les coordonnées sont absolues par rapport à la table. 
+
+
+
+Définition à la ligne 38 du fichier mouvement.\+c.
+
+\hypertarget{mouvement_8h_afd23e8bf698ad509901bf7679691e8d5}{\index{mouvement.\+h@{mouvement.\+h}!bouger@{bouger}}
+\index{bouger@{bouger}!mouvement.\+h@{mouvement.\+h}}
+\subsubsection[{bouger}]{\setlength{\rightskip}{0pt plus 5cm}void bouger (
+\begin{DoxyParamCaption}
+\item[{{\bf Coordonne\+\_\+mm}}]{x, }
+\item[{{\bf Coordonne\+\_\+mm}}]{y}
+\end{DoxyParamCaption}
+)}}\label{mouvement_8h_afd23e8bf698ad509901bf7679691e8d5}
+
+
+Déplace le robot en direction d'une point en dont les coordonnées sont absolues par rapport à la table. 
+
+
+
+Définition à la ligne 23 du fichier mouvement.\+c.
+
+\hypertarget{mouvement_8h_a2cdc81580e8931b25005042df81fc0ca}{\index{mouvement.\+h@{mouvement.\+h}!caller@{caller}}
+\index{caller@{caller}!mouvement.\+h@{mouvement.\+h}}
+\subsubsection[{caller}]{\setlength{\rightskip}{0pt plus 5cm}void caller (
+\begin{DoxyParamCaption}
+\item[{{\bf Coordonne\+\_\+mm}}]{post\+Callage\+X, }
+\item[{{\bf Coordonne\+\_\+mm}}]{post\+Callage\+Y}
+\end{DoxyParamCaption}
+)}}\label{mouvement_8h_a2cdc81580e8931b25005042df81fc0ca}
+
+
+Permet de réinitialiser les coordonnées du robot. 
+
+Avance le robot sur une courte distance jusqu'à ce qu'il rentre en butée puis enregistre les coordonnées. de la nouvelle position dans l'asser. 
+
+Définition à la ligne 16 du fichier mouvement.\+c.
+
+\hypertarget{mouvement_8h_a46464501b61623272ab0849ca3f115a0}{\index{mouvement.\+h@{mouvement.\+h}!reculer@{reculer}}
+\index{reculer@{reculer}!mouvement.\+h@{mouvement.\+h}}
+\subsubsection[{reculer}]{\setlength{\rightskip}{0pt plus 5cm}void reculer (
+\begin{DoxyParamCaption}
+\item[{{\bf Coordonne\+\_\+mm}}]{x, }
+\item[{{\bf Coordonne\+\_\+mm}}]{y}
+\end{DoxyParamCaption}
+)}}\label{mouvement_8h_a46464501b61623272ab0849ca3f115a0}
+
+
+Déplace le robot en direction d'une point en dont les coordonnées sont absolues par rapport à la table. 
+
+
+
+Définition à la ligne 58 du fichier mouvement.\+c.
+

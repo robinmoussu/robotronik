@@ -1,0 +1,115 @@
+.TH "comXbee.h" 3 "Jeudi 22 Mai 2014" "Petit Robot coupe 2014" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+comXbee.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'comAsser\&.h'\fP
+.br
+
+.SS "Structures de données"
+
+.in +1c
+.ti -1c
+.RI "struct \fBTrCouleur\fP"
+.br
+.ti -1c
+.RI "struct \fBTrDefault\fP"
+.br
+.ti -1c
+.RI "union \fBTrXbee\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCODE_TIRETTE\fP   0b0000"
+.br
+.ti -1c
+.RI "#define \fBCODE_XY\fP   0b0001"
+.br
+.ti -1c
+.RI "#define \fBCODE_COULEUR\fP   0b0010"
+.br
+.ti -1c
+.RI "#define \fBCODE_FIN\fP   0b0011"
+.br
+.ti -1c
+.RI "#define \fBCODE_XBEE_GET_XY\fP   0b0100"
+.br
+.in -1c
+.SS "Définitions de type"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBTrCouleur\fP \fBTrCouleur\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBTrDefault\fP \fBTrDefault\fP"
+.br
+.ti -1c
+.RI "typedef union \fBTrXbee\fP \fBTrXbee\fP"
+.br
+.in -1c
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsendXY\fP ()"
+.br
+.ti -1c
+.RI "void \fBmessage_processing_xbee\fP (unsigned char inMessage)"
+.br
+.in -1c
+.SH "Documentation des macros"
+.PP 
+.SS "#define CODE_COULEUR   0b0010"
+
+.PP
+Définition à la ligne 15 du fichier comXbee\&.h\&.
+.SS "#define CODE_FIN   0b0011"
+
+.PP
+Définition à la ligne 16 du fichier comXbee\&.h\&.
+.SS "#define CODE_TIRETTE   0b0000"
+
+.PP
+Définition à la ligne 13 du fichier comXbee\&.h\&.
+.SS "#define CODE_XBEE_GET_XY   0b0100"
+
+.PP
+Définition à la ligne 17 du fichier comXbee\&.h\&.
+.SS "#define CODE_XY   0b0001"
+
+.PP
+Définition à la ligne 14 du fichier comXbee\&.h\&.
+.SH "Documentation des définitions de type"
+.PP 
+.SS "typedef struct \fBTrCouleur\fP \fBTrCouleur\fP"
+
+.PP
+Définition à la ligne 27 du fichier comXbee\&.h\&.
+.SS "typedef struct \fBTrDefault\fP \fBTrDefault\fP"
+
+.PP
+Définition à la ligne 35 du fichier comXbee\&.h\&.
+.SS "typedef union \fBTrXbee\fP \fBTrXbee\fP"
+
+.PP
+Définition à la ligne 43 du fichier comXbee\&.h\&.
+.SH "Documentation des fonctions"
+.PP 
+.SS "void message_processing_xbee (unsigned charinMessage)"
+
+.PP
+Définition à la ligne 30 du fichier comXbee\&.c\&.
+.SS "void sendXY ()"
+
+.PP
+Définition à la ligne 21 du fichier comXbee\&.c\&.
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Petit Robot coupe 2014 à partir du code source\&.

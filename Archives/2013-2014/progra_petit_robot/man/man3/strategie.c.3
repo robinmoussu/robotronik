@@ -1,0 +1,65 @@
+.TH "strategie.c" 3 "Jeudi 22 Mai 2014" "Petit Robot coupe 2014" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+strategie.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'strategie\&.h'\fP
+.br
+\fC#include 'ailleurs\&.h'\fP
+.br
+\fC#include 'mouvement\&.h'\fP
+.br
+\fC#include 'coordonees\&.h'\fP
+.br
+\fC#include 'debug\&.h'\fP
+.br
+\fC#include 'comAsser\&.h'\fP
+.br
+
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBparcourt\fP (\fBObjectif\fP objPetitRobot[], int nbObj, \fBCouleur\fP \fBcouleur\fP)"
+.br
+.ti -1c
+.RI "void \fBevitementObstacle\fP ()"
+.br
+.ti -1c
+.RI "void \fBchercheObjectif\fP (\fBObjectif\fP obj[], int nbObj, \fBCouleur\fP \fBcouleur\fP)"
+.br
+.in -1c
+.SH "Documentation des fonctions"
+.PP 
+.SS "void chercheObjectif (\fBObjectif\fPobj[], intnbObj, \fBCouleur\fPcouleur)"
+Cherche le prochain objectif et débute le déplacement vers lui Le prochain objectif est soit l'objectif en cour si il y a eu une interruption de parcourt (tel qu'un obstactle), soit l'objectif suivant\&. 
+.PP
+\fBNote:\fP
+.RS 4
+Vérifie qu'il reste des objectifs\&. 
+.RE
+.PP
+
+.PP
+Définition à la ligne 71 du fichier strategie\&.c\&.
+.SS "void evitementObstacle ()"
+Stratégie d'évitement d'obstacle\&. 
+.PP
+\fBAvertissement:\fP
+.RS 4
+Cette fonction est actuellement blocante\&. 
+.RE
+.PP
+
+.PP
+Définition à la ligne 49 du fichier strategie\&.c\&.
+.SS "void parcourt (\fBObjectif\fPobjPetitRobot[], intnbObj, \fBCouleur\fPcouleur)"
+Toute la statégie du petit robot\&. 
+.PP
+Définition à la ligne 9 du fichier strategie\&.c\&.
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Petit Robot coupe 2014 à partir du code source\&.

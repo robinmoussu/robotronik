@@ -1,0 +1,90 @@
+.TH "uart_xbee.c" 3 "Jeudi 22 Mai 2014" "Petit Robot coupe 2014" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+uart_xbee.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'main\&.h'\fP
+.br
+\fC#include 'comXbee\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTX_BUFFER_SIZE\fP   64"
+.br
+.in -1c
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "int \fBUART_xbee_putc\fP (unsigned char c)"
+.br
+.ti -1c
+.RI "int \fBsend_xbee_long\fP (long message)"
+.br
+.ti -1c
+.RI "int \fBsend_xbee_short\fP (short message)"
+.br
+.ti -1c
+.RI "void \fB__attribute__\fP ((interrupt, auto_psv))"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "volatile unsigned char \fBtx2Buffer\fP [\fBTX_BUFFER_SIZE\fP]"
+.br
+.ti -1c
+.RI "volatile short \fBindexTx2Buffer\fP"
+.br
+.ti -1c
+.RI "volatile short \fBtx2BufferLength\fP"
+.br
+.in -1c
+.SH "Documentation des macros"
+.PP 
+.SS "#define TX_BUFFER_SIZE   64"
+
+.PP
+Définition à la ligne 16 du fichier uart_xbee\&.c\&.
+.SH "Documentation des fonctions"
+.PP 
+.SS "void __attribute__ ((interrupt, auto_psv))"
+
+.PP
+Définition à la ligne 64 du fichier uart_xbee\&.c\&.
+.SS "int send_xbee_long (longmessage)"
+
+.PP
+Définition à la ligne 49 du fichier uart_xbee\&.c\&.
+.SS "int send_xbee_short (shortmessage)"
+
+.PP
+Définition à la ligne 57 du fichier uart_xbee\&.c\&.
+.SS "int UART_xbee_putc (unsigned charc)"
+
+.PP
+Définition à la ligne 24 du fichier uart_xbee\&.c\&.
+.SH "Documentation des variables"
+.PP 
+.SS "volatile short indexTx2Buffer"
+
+.PP
+Définition à la ligne 27 du fichier main_petit_robot\&.c\&.
+.SS "volatile unsigned char tx2Buffer[\fBTX_BUFFER_SIZE\fP]"
+
+.PP
+Définition à la ligne 26 du fichier main_petit_robot\&.c\&.
+.SS "volatile short tx2BufferLength"
+
+.PP
+Définition à la ligne 28 du fichier main_petit_robot\&.c\&.
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Petit Robot coupe 2014 à partir du code source\&.

@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1353605705 source:c:\users\dan\desktop\svn robotronik\coupe 2013\configasserpc\commasser.cpp
+	"commAsser.h"
+	"uart.h"
+
+1353600990 c:\users\dan\desktop\svn robotronik\coupe 2013\configasserpc\commasser.h
+	"uart.h"
+
+1353601519 c:\users\dan\desktop\svn robotronik\coupe 2013\configasserpc\uart.h
+	<windows.h>
+	<cstdio>
+
+1353600930 source:c:\users\dan\desktop\svn robotronik\coupe 2013\configasserpc\commasser.c
+	"comAsser.h"
+
+1353602442 source:c:\users\dan\desktop\svn robotronik\coupe 2013\configasserpc\main.cpp
+	"uart.h"
+	"commAsser.h"
+	<iostream>
+
+1353602000 source:c:\users\dan\desktop\svn robotronik\coupe 2013\configasserpc\uart.cpp
+	"UART.h"
+
+1354106565 source:c:\documents and settings\user\bureau\svn\coupe 2013\configasserpc\uart.cpp
+	"UART.h"
+
+1354104767 c:\documents and settings\user\bureau\svn\coupe 2013\configasserpc\uart.h
+	<windows.h>
+	<cstdio>
+
+1354106408 source:c:\documents and settings\user\bureau\svn\coupe 2013\configasserpc\commasser.cpp
+	"commAsser.h"
+	"uart.h"
+
+1354111663 c:\documents and settings\user\bureau\svn\coupe 2013\configasserpc\commasser.h
+	"uart.h"
+
+1354112545 source:c:\documents and settings\user\bureau\svn\coupe 2013\configasserpc\main.cpp
+	"uart.h"
+	"commAsser.h"
+	<iostream>
+	<stdio.h>
+

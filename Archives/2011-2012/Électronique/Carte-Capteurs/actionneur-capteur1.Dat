@@ -1,0 +1,12 @@
+Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~actionneur-capteur1.PrjPCB|ReportField=ProjectFullPath~C:\Users\Dan\Desktop\Robotronik\actionneur-capteur1.PrjPCB|ReportField=Title~Bill of Materials For Project [actionneur-capteur1.PrjPCB] (No PCB Document Selected)|ReportField=TotalQuantity~29|ReportField=ReportTime~16:45:49|ReportField=ReportDate~21/04/2012|ReportField=ReportDateTime~21/04/2012 16:45:49|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~21/04/2012|ReportField=CurrentTime~16:45:45|ReportField=Date~|ReportField=DocumentFullPathAndName~C:\Users\Dan\Desktop\Robotronik\actionneur.SchDoc|ReportField=DocumentName~actionneur.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~21/04/2012|ReportField=Organization~|ReportField=ProjectName~actionneur-capteur1.PrjPCB|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~actionneur-capteur1.PrjPCB|ReportField=DataSourceFullPath~C:\Users\Dan\Desktop\Robotronik\actionneur-capteur1.PrjPCB
+Bornier_2|Header, 2-Pin|3V3, bornier5v, bornier12v, UART1, UART2|Bornier_2|Bornier_2|5
+Cap2|Capacitor|C1|CAPA2|Cap2|1
+Cap Semi|Capacitor (Semiconductor SIM Model)|C2, C3|CAPA2|Cap Semi|2
+Header 25X2|Header, 25-Pin, Dual row|Connector|HDR2X25|Header 25X2|1
+Led|LED|D1, D2|LED|Led|2
+LM317T|3-Terminal Adjustable Regulator|LD33V|TO220-radiateur|LM317T|1
+CD4017BCN|Decade Counter/Divider with 10 Decoded Outputs|MC145004BCP|DIP16|CD4017BCN|1
+Res2|Resistor|R1, R2|res5_1/4W|Res2|2
+Res Semi|Semiconductor Resistor|R3, R4|AXIAL-0.5|Res Semi|2
+Bornier_3|Header, 3-Pin|servomoteur12VD, servomoteur12VG, XUB512V_1, XUB512V_2|Bornier_3|Bornier_3|4
+Bornier_3|Header, 3-Pin|sharp1, sharp2, sharp3, sharp4, sharp5, sharp6, sharp7, sharp8|HDR1X3|Bornier_3|8

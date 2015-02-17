@@ -1,0 +1,8 @@
+Reprendre le fichier entete.xcf
+Pour ajouter le titre :
+1) Créer un nouveau texte avec la police Din taille 100px
+2) Faire texte vers selection ( clic droit sur le calc)
+3) Agrandir le selection de 3px
+4) Remplir de blanc dans un nouveau calque ( à placer sous le texte )
+
+Et voila !

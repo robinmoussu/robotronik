@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Localisation de robot: Référence du fichier ordonnanceur.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="phelma_logo_petit.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Localisation de robot
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier ordonnanceur.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Contient les fonctions relatives à l’ordonnancement.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;limits.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00007_source.html">common.h</a>&quot;</code><br />
+</div>
+<p><a href="a00018_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html">_Op_context</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Pointeur vers une fonction à exécuter. Prend en paramètre un pointeur sur le contexte de la fonction.  <a href="a00001.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:af32051e4a9ba1cafdcd9a17ac71d6fa4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#af32051e4a9ba1cafdcd9a17ac71d6fa4">NB_TIMED_INSTRUCTIONS</a>&#160;&#160;&#160;/*32*/ 1</td></tr>
+<tr class="memdesc:af32051e4a9ba1cafdcd9a17ac71d6fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre maximum d’instructions simultanées devant s’exécuter au bout d’un certain temps (inclue les watchdog)  <a href="#af32051e4a9ba1cafdcd9a17ac71d6fa4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af32051e4a9ba1cafdcd9a17ac71d6fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12c0c3530031a193d83b8a2bdb1d9a31"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#a12c0c3530031a193d83b8a2bdb1d9a31">NB_NOT_TIMED_INSTRUCTIONS</a>&#160;&#160;&#160;/*16*/ 1</td></tr>
+<tr class="memdesc:a12c0c3530031a193d83b8a2bdb1d9a31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre maximum d’instructions simultanées à exécuter dès que possible (mais de priorités inférieures aux instructions "timés")  <a href="#a12c0c3530031a193d83b8a2bdb1d9a31">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a12c0c3530031a193d83b8a2bdb1d9a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd0dda75fa865e1efae98e3e2b204ef4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#acd0dda75fa865e1efae98e3e2b204ef4">T_MAX</a>&#160;&#160;&#160;INT_MAX</td></tr>
+<tr class="memdesc:acd0dda75fa865e1efae98e3e2b204ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">nombre maximum du compteur  <a href="#acd0dda75fa865e1efae98e3e2b204ef4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acd0dda75fa865e1efae98e3e2b204ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:ad86a2d8cd9f58593fa11f8f81793a077"><td class="memItemLeft" align="right" valign="top">typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#ad86a2d8cd9f58593fa11f8f81793a077">Time</a></td></tr>
+<tr class="separator:ad86a2d8cd9f58593fa11f8f81793a077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c77dbb907c647f8e5218d0303e8e6e"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#a61c77dbb907c647f8e5218d0303e8e6e">Operation</a> )(struct <a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> *context)</td></tr>
+<tr class="memdesc:a61c77dbb907c647f8e5218d0303e8e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Les informations utilisées par l'ordonnanceur pour chacune des fonctions.  <a href="#a61c77dbb907c647f8e5218d0303e8e6e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a61c77dbb907c647f8e5218d0303e8e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59e415b86cdc213e4f33258ab167160d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="a00001.html">_Op_context</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a></td></tr>
+<tr class="separator:a59e415b86cdc213e4f33258ab167160d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:acfd3261aeee1b166151c94840f10765d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#acfd3261aeee1b166151c94840f10765d">ordonnanceur</a> (<a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> *opt_context[<a class="el" href="a00018.html#af32051e4a9ba1cafdcd9a17ac71d6fa4">NB_TIMED_INSTRUCTIONS</a>], <a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> *opnt_context[<a class="el" href="a00018.html#a12c0c3530031a193d83b8a2bdb1d9a31">NB_NOT_TIMED_INSTRUCTIONS</a>])</td></tr>
+<tr class="memdesc:acfd3261aeee1b166151c94840f10765d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exécute les fonctions dans l'ordre prévu Les opérations devant être exécutées à un moment donné sont prioritaires, puis les autres opérations sont exécutées. À chaque tour de boucle, on cherche à exécuter une opération timé, et uniquement si il n'y en a pas, on exécute la prochaine opération non timé.  <a href="#acfd3261aeee1b166151c94840f10765d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acfd3261aeee1b166151c94840f10765d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0f321bcad6602c1697c4fcaff31d095"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#ad0f321bcad6602c1697c4fcaff31d095">opt_next_op</a> (<a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> **ops, int nb_ops)</td></tr>
+<tr class="separator:ad0f321bcad6602c1697c4fcaff31d095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4e910f99bdaaff339b4bbc1e85f04af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#ac4e910f99bdaaff339b4bbc1e85f04af">opt_init</a> (<a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> *opt_context[<a class="el" href="a00018.html#af32051e4a9ba1cafdcd9a17ac71d6fa4">NB_TIMED_INSTRUCTIONS</a>])</td></tr>
+<tr class="separator:ac4e910f99bdaaff339b4bbc1e85f04af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f47b29b8882ee4b3a5d02d2dbf0be4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#a1f47b29b8882ee4b3a5d02d2dbf0be4e">op_sort</a> (<a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> **ops, int nb_ops)</td></tr>
+<tr class="separator:a1f47b29b8882ee4b3a5d02d2dbf0be4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa12682edc4508eb1edc08deb5ab646fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#aa12682edc4508eb1edc08deb5ab646fb">op_add</a> (<a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> **ops, int nb_ops, <a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> *op_new)</td></tr>
+<tr class="separator:aa12682edc4508eb1edc08deb5ab646fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7d6a582f6f7532b19d3dbb1a29620b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#ab7d6a582f6f7532b19d3dbb1a29620b2">op_delete</a> (<a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> *ops[], int nb_ops, <a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> *op_delete)</td></tr>
+<tr class="separator:ab7d6a582f6f7532b19d3dbb1a29620b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a98ba9b6b3a7c935e9f4d3eed612dc66d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00018.html#ad86a2d8cd9f58593fa11f8f81793a077">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#a98ba9b6b3a7c935e9f4d3eed612dc66d">TIMER</a></td></tr>
+<tr class="memdesc:a98ba9b6b3a7c935e9f4d3eed612dc66d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valeur courante du timer.  <a href="#a98ba9b6b3a7c935e9f4d3eed612dc66d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a98ba9b6b3a7c935e9f4d3eed612dc66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Contient les fonctions relatives à l’ordonnancement. </p>
+<p>Un timer sur 32 bits permet de mesurer le temps. La granularité est d’environ 300 micro-secondes, et le timer ne déborde qu’au bout de 10 minutes, ce qui est très largement suffisant pour un match (qui dure 90 secondes).</p>
+<p>Le timer remis à 0 lors du démarage du PIC.</p>
+<dl class="section note"><dt>Note</dt><dd>À plusieurs reprises, le code fait référence à des instructions "timés". Je n’avais pas trouvé de mot aproprié pour signifier « devant s’éxécuter à un moment donné ».<ul>
+<li>opnt = operation not timed</li>
+<li>opt = operation timed </li>
+</ul>
+</dd></dl>
+
+<p>Définition dans le fichier <a class="el" href="a00018_source.html">ordonnanceur.h</a>.</p>
+</div><h2 class="groupheader">Documentation des macros</h2>
+<a class="anchor" id="a12c0c3530031a193d83b8a2bdb1d9a31"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NB_NOT_TIMED_INSTRUCTIONS&#160;&#160;&#160;/*16*/ 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Nombre maximum d’instructions simultanées à exécuter dès que possible (mais de priorités inférieures aux instructions "timés") </p>
+
+<p>Définition à la ligne <a class="el" href="a00018_source.html#l00047">47</a> du fichier <a class="el" href="a00018_source.html">ordonnanceur.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af32051e4a9ba1cafdcd9a17ac71d6fa4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NB_TIMED_INSTRUCTIONS&#160;&#160;&#160;/*32*/ 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Nombre maximum d’instructions simultanées devant s’exécuter au bout d’un certain temps (inclue les watchdog) </p>
+
+<p>Définition à la ligne <a class="el" href="a00018_source.html#l00044">44</a> du fichier <a class="el" href="a00018_source.html">ordonnanceur.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd0dda75fa865e1efae98e3e2b204ef4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define T_MAX&#160;&#160;&#160;INT_MAX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>nombre maximum du compteur </p>
+
+<p>Définition à la ligne <a class="el" href="a00018_source.html#l00056">56</a> du fichier <a class="el" href="a00018_source.html">ordonnanceur.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des définitions de type</h2>
+<a class="anchor" id="a59e415b86cdc213e4f33258ab167160d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="a00001.html">_Op_context</a> <a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00018_source.html#l00069">69</a> du fichier <a class="el" href="a00018_source.html">ordonnanceur.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a61c77dbb907c647f8e5218d0303e8e6e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* Operation)(struct <a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> *context)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Les informations utilisées par l'ordonnanceur pour chacune des fonctions. </p>
+
+<p>Définition à la ligne <a class="el" href="a00018_source.html#l00063">63</a> du fichier <a class="el" href="a00018_source.html">ordonnanceur.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad86a2d8cd9f58593fa11f8f81793a077"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int32_t <a class="el" href="a00018.html#ad86a2d8cd9f58593fa11f8f81793a077">Time</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00018_source.html#l00051">51</a> du fichier <a class="el" href="a00018_source.html">ordonnanceur.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="aa12682edc4508eb1edc08deb5ab646fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00007.html#a39db6982619d623273fad8a383489309">Bool</a> op_add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> **&#160;</td>
+          <td class="paramname"><em>ops</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_ops</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> *&#160;</td>
+          <td class="paramname"><em>op_new</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ajoute une opération au tableau d'opération </p><dl class="section return"><dt>Renvoie</dt><dd>true si l'opération s'est bien passé, false si il n'y a plus de place </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="a00017_source.html#l00078">78</a> du fichier <a class="el" href="a00017_source.html">ordonnanceur.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab7d6a582f6f7532b19d3dbb1a29620b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void op_delete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> *&#160;</td>
+          <td class="paramname"><em>ops</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_ops</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> *&#160;</td>
+          <td class="paramname"><em>op_delete</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Efface une opération du tableau d'opération </p>
+
+<p>Définition à la ligne <a class="el" href="a00017_source.html#l00092">92</a> du fichier <a class="el" href="a00017_source.html">ordonnanceur.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1f47b29b8882ee4b3a5d02d2dbf0be4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void op_sort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> **&#160;</td>
+          <td class="paramname"><em>ops</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_ops</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Regroupe toutes les opérations dans le début du tableau (pour optimisation) </p>
+
+<p>Définition à la ligne <a class="el" href="a00017_source.html#l00061">61</a> du fichier <a class="el" href="a00017_source.html">ordonnanceur.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac4e910f99bdaaff339b4bbc1e85f04af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void opt_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> *&#160;</td>
+          <td class="paramname"><em>opt_context</em>[NB_TIMED_INSTRUCTIONS]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialise les opérations à effectuer </p>
+
+</div>
+</div>
+<a class="anchor" id="ad0f321bcad6602c1697c4fcaff31d095"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a>* opt_next_op </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> **&#160;</td>
+          <td class="paramname"><em>ops</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_ops</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pointeur sur les fonctions à exécuter </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ops</td><td>Tableau contenant les différentes fonctions </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="a00017_source.html#l00044">44</a> du fichier <a class="el" href="a00017_source.html">ordonnanceur.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acfd3261aeee1b166151c94840f10765d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ordonnanceur </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> *&#160;</td>
+          <td class="paramname"><em>opt_context</em>[NB_TIMED_INSTRUCTIONS], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00018.html#a59e415b86cdc213e4f33258ab167160d">Op_context</a> *&#160;</td>
+          <td class="paramname"><em>opnt_context</em>[NB_NOT_TIMED_INSTRUCTIONS]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exécute les fonctions dans l'ordre prévu Les opérations devant être exécutées à un moment donné sont prioritaires, puis les autres opérations sont exécutées. À chaque tour de boucle, on cherche à exécuter une opération timé, et uniquement si il n'y en a pas, on exécute la prochaine opération non timé. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opt_context</td><td>La liste des opérations devant avoir lieu à un moment donné (t = time) </td></tr>
+    <tr><td class="paramname">opnt_context</td><td>Les autres opérations (nt = not timed) </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; La prochaine opération ayant lieu à un moment donné (celle ayant le champ t_next le plus petit dans opt_context)</p>
+<p>&lt; L'indice de la prochaine opération non timé à exécuter </p>
+
+<p>Définition à la ligne <a class="el" href="a00017_source.html#l00015">15</a> du fichier <a class="el" href="a00017_source.html">ordonnanceur.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a class="anchor" id="a98ba9b6b3a7c935e9f4d3eed612dc66d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00018.html#ad86a2d8cd9f58593fa11f8f81793a077">Time</a> TIMER</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Valeur courante du timer. </p>
+
+<p>Définition à la ligne <a class="el" href="a00022_source.html#l00040">40</a> du fichier <a class="el" href="a00022_source.html">test_calcul.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Lundi 26 Mai 2014 08:30:03 pour Localisation de robot par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

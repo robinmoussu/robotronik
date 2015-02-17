@@ -1,0 +1,288 @@
+.TH "comAsser.h" 3 "Jeudi 22 Mai 2014" "Petit Robot coupe 2014" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+comAsser.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Structures de données"
+
+.in +1c
+.ti -1c
+.RI "struct \fBTrDelta\fP"
+.br
+.ti -1c
+.RI "struct \fBTrAlpha\fP"
+.br
+.ti -1c
+.RI "struct \fBTrGenShort\fP"
+.br
+.ti -1c
+.RI "struct \fBTrShort\fP"
+.br
+.ti -1c
+.RI "union \fBTrameAsser\fP"
+.br
+.ti -1c
+.RI "struct \fBTr4Char\fP"
+.br
+.ti -1c
+.RI "struct \fBTrPos\fP"
+.br
+.ti -1c
+.RI "union \fBTrame32\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDEBUG_PRINTF\fP(message,\&.\&.\&.)"
+.br
+.ti -1c
+.RI "#define \fBCODE_DELTA\fP   0b010"
+.br
+.ti -1c
+.RI "#define \fBCODE_ALPHA\fP   0b1010"
+.br
+.ti -1c
+.RI "#define \fBCODE_ALPHA_ABS\fP   0b1011"
+.br
+.ti -1c
+.RI "#define \fBCODE_STOP\fP   0b0000"
+.br
+.ti -1c
+.RI "#define \fBCODE_GET_XY\fP   0b1100"
+.br
+.ti -1c
+.RI "#define \fBCODE_GET_ALPHA\fP   0b1101"
+.br
+.ti -1c
+.RI "#define \fBCODE_SET_XY\fP   0b0011"
+.br
+.ti -1c
+.RI "#define \fBCODE_SET_ALPHA\fP   0b0010"
+.br
+.ti -1c
+.RI "#define \fBCODE_PRES_GROS\fP   0b0110"
+.br
+.ti -1c
+.RI "#define \fBCODE_PRES_PRECIS\fP   0b0111"
+.br
+.ti -1c
+.RI "#define \fBCODE_DERAPAGE\fP   0b1000"
+.br
+.ti -1c
+.RI "#define \fBDONE_ASSER\fP   0b0001"
+.br
+.in -1c
+.SS "Définitions de type"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBTrDelta\fP \fBTrDelta\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBTrAlpha\fP \fBTrAlpha\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBTrGenShort\fP \fBTrGenShort\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBTrShort\fP \fBTrShort\fP"
+.br
+.ti -1c
+.RI "typedef union \fBTrameAsser\fP \fBTrameAsser\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBTr4Char\fP \fBTr4Char\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBTrPos\fP \fBTrPos\fP"
+.br
+.ti -1c
+.RI "typedef union \fBTrame32\fP \fBTrame32\fP"
+.br
+.in -1c
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsendDelta\fP (short delta)"
+.br
+.ti -1c
+.RI "void \fBsendAlpha\fP (short alpha)"
+.br
+.ti -1c
+.RI "void \fBsendAlphaAbs\fP (short alpha)"
+.br
+.ti -1c
+.RI "void \fBsendStop\fP (void)"
+.br
+.ti -1c
+.RI "void \fBwaitDoneAsser\fP (void)"
+.br
+.ti -1c
+.RI "void \fBgetAlpha\fP (void)"
+.br
+.ti -1c
+.RI "void \fBgetXY\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsendSetXY\fP (int x, int y)"
+.br
+.ti -1c
+.RI "void \fBsendSetAlpha\fP (short alpha)"
+.br
+.ti -1c
+.RI "void \fBsendPresGros\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsendPresPrecis\fP (void)"
+.br
+.ti -1c
+.RI "void \fBmessage_processing\fP (unsigned char inMessage)"
+.br
+.in -1c
+.SH "Documentation des macros"
+.PP 
+.SS "#define CODE_ALPHA   0b1010"
+
+.PP
+Définition à la ligne 17 du fichier comAsser\&.h\&.
+.SS "#define CODE_ALPHA_ABS   0b1011"
+
+.PP
+Définition à la ligne 18 du fichier comAsser\&.h\&.
+.SS "#define CODE_DELTA   0b010"
+
+.PP
+Définition à la ligne 16 du fichier comAsser\&.h\&.
+.SS "#define CODE_DERAPAGE   0b1000"
+
+.PP
+Définition à la ligne 27 du fichier comAsser\&.h\&.
+.SS "#define CODE_GET_ALPHA   0b1101"
+
+.PP
+Définition à la ligne 21 du fichier comAsser\&.h\&.
+.SS "#define CODE_GET_XY   0b1100"
+
+.PP
+Définition à la ligne 20 du fichier comAsser\&.h\&.
+.SS "#define CODE_PRES_GROS   0b0110"
+
+.PP
+Définition à la ligne 24 du fichier comAsser\&.h\&.
+.SS "#define CODE_PRES_PRECIS   0b0111"
+
+.PP
+Définition à la ligne 25 du fichier comAsser\&.h\&.
+.SS "#define CODE_SET_ALPHA   0b0010"
+
+.PP
+Définition à la ligne 23 du fichier comAsser\&.h\&.
+.SS "#define CODE_SET_XY   0b0011"
+
+.PP
+Définition à la ligne 22 du fichier comAsser\&.h\&.
+.SS "#define CODE_STOP   0b0000"
+
+.PP
+Définition à la ligne 19 du fichier comAsser\&.h\&.
+.SS "#define DEBUG_PRINTF(message, \&.\&.\&.)"
+
+.PP
+Définition à la ligne 8 du fichier comAsser\&.h\&.
+.SS "#define DONE_ASSER   0b0001"
+
+.PP
+Définition à la ligne 29 du fichier comAsser\&.h\&.
+.SH "Documentation des définitions de type"
+.PP 
+.SS "typedef struct \fBTr4Char\fP \fBTr4Char\fP"
+
+.PP
+Définition à la ligne 84 du fichier comAsser\&.h\&.
+.SS "typedef struct \fBTrAlpha\fP \fBTrAlpha\fP"
+
+.PP
+Définition à la ligne 48 du fichier comAsser\&.h\&.
+.SS "typedef union \fBTrame32\fP \fBTrame32\fP"
+
+.PP
+Définition à la ligne 102 du fichier comAsser\&.h\&.
+.SS "typedef union \fBTrameAsser\fP \fBTrameAsser\fP"
+
+.PP
+Définition à la ligne 74 du fichier comAsser\&.h\&.
+.SS "typedef struct \fBTrDelta\fP \fBTrDelta\fP"
+
+.PP
+Définition à la ligne 38 du fichier comAsser\&.h\&.
+.SS "typedef struct \fBTrGenShort\fP \fBTrGenShort\fP"
+
+.PP
+Définition à la ligne 56 du fichier comAsser\&.h\&.
+.SS "typedef struct \fBTrPos\fP \fBTrPos\fP"
+
+.PP
+Définition à la ligne 94 du fichier comAsser\&.h\&.
+.SS "typedef struct \fBTrShort\fP \fBTrShort\fP"
+
+.PP
+Définition à la ligne 64 du fichier comAsser\&.h\&.
+.SH "Documentation des fonctions"
+.PP 
+.SS "void getAlpha (void)"
+
+.PP
+Définition à la ligne 125 du fichier comAsser\&.c\&.
+.SS "void getXY (void)"
+
+.PP
+Définition à la ligne 86 du fichier comAsser\&.c\&.
+.SS "void message_processing (unsigned charinMessage)"
+
+.PP
+Définition à la ligne 152 du fichier comAsser\&.c\&.
+.SS "void sendAlpha (shortalpha)"
+
+.PP
+Définition à la ligne 36 du fichier comAsser\&.c\&.
+.SS "void sendAlphaAbs (shortalpha)"
+
+.PP
+Définition à la ligne 56 du fichier comAsser\&.c\&.
+.SS "void sendDelta (shortdelta)"
+
+.PP
+Définition à la ligne 16 du fichier comAsser\&.c\&.
+.SS "void sendPresGros (void)"
+
+.PP
+Définition à la ligne 136 du fichier comAsser\&.c\&.
+.SS "void sendPresPrecis (void)"
+
+.PP
+Définition à la ligne 144 du fichier comAsser\&.c\&.
+.SS "void sendSetAlpha (shortalpha)"
+
+.PP
+Définition à la ligne 107 du fichier comAsser\&.c\&.
+.SS "void sendSetXY (intx, inty)"
+
+.PP
+Définition à la ligne 97 du fichier comAsser\&.c\&.
+.SS "void sendStop (void)"
+
+.PP
+Définition à la ligne 76 du fichier comAsser\&.c\&.
+.SS "void waitDoneAsser (void)"
+
+.PP
+Définition à la ligne 233 du fichier comAsser\&.c\&.
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Petit Robot coupe 2014 à partir du code source\&.

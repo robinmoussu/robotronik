@@ -1,0 +1,88 @@
+\hypertarget{strategie_8h}{\section{Référence du fichier strategie.\+h}
+\label{strategie_8h}\index{strategie.\+h@{strategie.\+h}}
+}
+
+
+S’occupe de la statégie du robot.  
+
+
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\\*
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{strategie_8h_af12ee6a9b7a158fe2853f25276965dc4}{evitement\+Obstacle} (\hyperlink{struct_info_mvt}{Info\+Mvt} $\ast$info\+Mvt)
+\begin{DoxyCompactList}\small\item\em Stratégie d'évitement d'obstacle. \end{DoxyCompactList}\item 
+void \hyperlink{strategie_8h_a09541b665aad0d0b8cc100386f282c5d}{cherche\+Objectif} (\hyperlink{struct_objectif}{Objectif} obj\mbox{[}$\,$\mbox{]}, int nb\+Obj, \hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur} \hyperlink{main__petit__robot_8c_af0e152d09c13944935e00bef7a3c5111}{couleur})
+\begin{DoxyCompactList}\small\item\em Cherche le prochain objectif et débute le déplacement vers lui Le prochain objectif est soit l'objectif en cour si il y a eu une interruption de parcourt (tel qu'un obstactle), soit l'objectif suivant. \end{DoxyCompactList}\item 
+void \hyperlink{strategie_8h_a7a02e8f8a866be919fda8c90d47eb2a4}{parcourt} (\hyperlink{struct_objectif}{Objectif} obj\+Petit\+Robot\mbox{[}$\,$\mbox{]}, int nb\+Obj, \hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur} \hyperlink{main__petit__robot_8c_af0e152d09c13944935e00bef7a3c5111}{couleur}, \hyperlink{struct_info_mvt}{Info\+Mvt} $\ast$info\+Mvt)
+\begin{DoxyCompactList}\small\item\em Toute la statégie du petit robot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+S’occupe de la statégie du robot. 
+
+Les objectifs sont défénis dans un tableau d’objectifs \begin{DoxyRefDesc}{A faire}
+\item[\hyperlink{todo__todo000012}{A faire}]La stucture objectif devrait être défini dans ce fichier \end{DoxyRefDesc}
+
+
+Définition dans le fichier \hyperlink{strategie_8h_source}{strategie.\+h}.
+
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{strategie_8h_a09541b665aad0d0b8cc100386f282c5d}{\index{strategie.\+h@{strategie.\+h}!cherche\+Objectif@{cherche\+Objectif}}
+\index{cherche\+Objectif@{cherche\+Objectif}!strategie.\+h@{strategie.\+h}}
+\subsubsection[{cherche\+Objectif}]{\setlength{\rightskip}{0pt plus 5cm}void cherche\+Objectif (
+\begin{DoxyParamCaption}
+\item[{{\bf Objectif}}]{obj\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{nb\+Obj, }
+\item[{{\bf Couleur}}]{couleur}
+\end{DoxyParamCaption}
+)}}\label{strategie_8h_a09541b665aad0d0b8cc100386f282c5d}
+
+
+Cherche le prochain objectif et débute le déplacement vers lui Le prochain objectif est soit l'objectif en cour si il y a eu une interruption de parcourt (tel qu'un obstactle), soit l'objectif suivant. 
+
+\begin{DoxyNote}{Note}
+Vérifie qu'il reste des objectifs. 
+\end{DoxyNote}
+
+
+Définition à la ligne 72 du fichier strategie.\+c.
+
+\hypertarget{strategie_8h_af12ee6a9b7a158fe2853f25276965dc4}{\index{strategie.\+h@{strategie.\+h}!evitement\+Obstacle@{evitement\+Obstacle}}
+\index{evitement\+Obstacle@{evitement\+Obstacle}!strategie.\+h@{strategie.\+h}}
+\subsubsection[{evitement\+Obstacle}]{\setlength{\rightskip}{0pt plus 5cm}void evitement\+Obstacle (
+\begin{DoxyParamCaption}
+\item[{{\bf Info\+Mvt} $\ast$}]{info\+Mvt}
+\end{DoxyParamCaption}
+)}}\label{strategie_8h_af12ee6a9b7a158fe2853f25276965dc4}
+
+
+Stratégie d'évitement d'obstacle. 
+
+\begin{DoxyWarning}{Avertissement}
+Cette fonction est actuellement blocante. 
+\end{DoxyWarning}
+
+
+Définition à la ligne 50 du fichier strategie.\+c.
+
+\hypertarget{strategie_8h_a7a02e8f8a866be919fda8c90d47eb2a4}{\index{strategie.\+h@{strategie.\+h}!parcourt@{parcourt}}
+\index{parcourt@{parcourt}!strategie.\+h@{strategie.\+h}}
+\subsubsection[{parcourt}]{\setlength{\rightskip}{0pt plus 5cm}void parcourt (
+\begin{DoxyParamCaption}
+\item[{{\bf Objectif}}]{obj\+Petit\+Robot\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{nb\+Obj, }
+\item[{{\bf Couleur}}]{couleur, }
+\item[{{\bf Info\+Mvt} $\ast$}]{info\+Mvt}
+\end{DoxyParamCaption}
+)}}\label{strategie_8h_a7a02e8f8a866be919fda8c90d47eb2a4}
+
+
+Toute la statégie du petit robot. 
+
+
+
+Définition à la ligne 10 du fichier strategie.\+c.
+

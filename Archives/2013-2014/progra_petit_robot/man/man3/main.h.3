@@ -1,0 +1,328 @@
+.TH "main.h" 3 "Jeudi 22 Mai 2014" "Petit Robot coupe 2014" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main.h \- 
+.PP
+Contient tout ce qui doit être inclus dans tout le projet\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <math\&.h>\fP
+.br
+\fC#include <p33FJ128MC802\&.h>\fP
+.br
+\fC#include 'comAsser\&.h'\fP
+.br
+\fC#include 'init\&.h'\fP
+.br
+\fC#include 'debug\&.h'\fP
+.br
+\fC#include 'uart\&.h'\fP
+.br
+
+.SS "Structures de données"
+
+.in +1c
+.ti -1c
+.RI "struct \fBObjectif\fP"
+.br
+.ti -1c
+.RI "struct \fBAction\fP"
+.br
+.ti -1c
+.RI "union \fBT_dividedLong\fP"
+.br
+.ti -1c
+.RI "union \fBT_dividedULong\fP"
+.br
+.ti -1c
+.RI "struct \fBPos\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPI\fP   3\&.1415"
+.br
+.ti -1c
+.RI "#define \fBINT_UART_TX\fP"
+.br
+.ti -1c
+.RI "#define \fBLARGEUR\fP   324"
+.br
+.in -1c
+.SS "Définitions de type"
+
+.in +1c
+.ti -1c
+.RI "typedef \fBBool\fP \fBboolean\fP"
+.br
+.ti -1c
+.RI "typedef int \fBCoordonne_mm\fP"
+.br
+.RI "\fICoordonnées en mm\&. \fP"
+.ti -1c
+.RI "typedef int \fBDistance_mm\fP"
+.br
+.RI "\fIDistance en mm\&. \fP"
+.ti -1c
+.RI "typedef float \fBAngle\fP"
+.br
+.RI "\fIAngle en degré \fP"
+.ti -1c
+.RI "typedef enum \fBtypeMvt\fP \fBtypeMvt\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBPos\fP \fBPos\fP"
+.br
+.in -1c
+.SS "Énumérations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBBool\fP { \fBfalse\fP, \fBtrue\fP }"
+.br
+.ti -1c
+.RI "enum \fBCOORDONNEES_2014_mm\fP { \fBCOTE\fP = 88, \fBAVANT\fP = 60, \fBARRIERE\fP = 95, \fBEST\fP = 3000, \fBOUEST\fP = 0, \fBCOIN_ROUGE\fP = OUEST, \fBCOIN_JAUNE\fP = EST, \fBNORD\fP = 0, \fBSUD\fP = 2000, \fBBAC\fP = 295 + AVANT, \fBDEPART\fP = 600, \fBCOIN\fP = 370, \fBARBRE\fP = 275, \fBDISTANCE_EVITEMENT\fP = 00000000000000000000000000000000000000000000000, \fBDISTANCE_CALLAGE\fP = 00000000000000000000000000000000000000000000000, \fBSORTIR_ZONE_DEPART\fP = 00000000000000000000000000000000000000000000000 }"
+.br
+.ti -1c
+.RI "enum \fBCouleur\fP { \fBJAUNE\fP, \fBROUGE\fP, \fBCOULEUR_DEPART\fP, \fBCOULEUR_OPPOSE\fP }"
+.br
+.ti -1c
+.RI "enum \fBtypeMvt\fP { \fBAVANCER\fP, \fBRECULER\fP, \fBBOUGER\fP, \fBCALLER\fP }"
+.br
+.ti -1c
+.RI "enum \fBTypeVitesse\fP { \fBRAPIDE\fP, \fBLENT\fP }"
+.br
+.in -1c
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "int \fBabs\fP (int n)"
+.br
+.ti -1c
+.RI "void \fBverifierPosition\fP ()"
+.br
+.ti -1c
+.RI "void \fBverifierSharp\fP ()"
+.br
+.ti -1c
+.RI "void \fBfaire\fP (\fBAction\fP mouvement)"
+.br
+.ti -1c
+.RI "void \fBmachine\fP ()"
+.br
+.ti -1c
+.RI "int \fBdansTable\fP (int, int)"
+.br
+.ti -1c
+.RI "void \fBaller\fP (\fBPos\fP position)"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+Contient tout ce qui doit être inclus dans tout le projet\&. 
+
+Contient tout ce qui est à inclure globalement dans le projet\&.
+.PP
+\fBNote:\fP
+.RS 4
+Doit être inclu par tout les fichiers compilés\&.
+.PP
+est à inclure dans tout les fichiers compilé du projet 
+.RE
+.PP
+
+.PP
+Définition dans le fichier \fBmain\&.h\fP\&.
+.SH "Documentation des macros"
+.PP 
+.SS "#define INT_UART_TX"
+
+.PP
+Définition à la ligne 100 du fichier main\&.h\&.
+.SS "#define LARGEUR   324"
+
+.PP
+Définition à la ligne 101 du fichier main\&.h\&.
+.SS "#define PI   3\&.1415"
+
+.PP
+\fBA faire\fP
+.RS 4
+À déplacer ou il y en a besoin 
+.RE
+.PP
+
+.PP
+Définition à la ligne 18 du fichier main\&.h\&.
+.SH "Documentation des définitions de type"
+.PP 
+.SS "typedef float \fBAngle\fP"
+
+.PP
+Angle en degré 
+.PP
+Définition à la ligne 24 du fichier main\&.h\&.
+.SS "typedef \fBBool\fP \fBboolean\fP"
+
+.PP
+\fBA faire\fP
+.RS 4
+fusionner avec Bool 
+.RE
+.PP
+
+.PP
+Définition à la ligne 13 du fichier main\&.h\&.
+.SS "typedef int \fBCoordonne_mm\fP"
+
+.PP
+Coordonnées en mm\&. 
+.PP
+Définition à la ligne 22 du fichier main\&.h\&.
+.SS "typedef int \fBDistance_mm\fP"
+
+.PP
+Distance en mm\&. 
+.PP
+Définition à la ligne 23 du fichier main\&.h\&.
+.SS "typedef struct \fBPos\fP \fBPos\fP"
+
+.PP
+Définition à la ligne 142 du fichier main\&.h\&.
+.SS "typedef enum \fBtypeMvt\fP \fBtypeMvt\fP"
+
+.PP
+Définition à la ligne 71 du fichier main\&.h\&.
+.SH "Documentation du type de l'énumération"
+.PP 
+.SS "enum \fBBool\fP"
+Compatibilitée avec le C89… 
+.PP
+\fBValeurs énumérées\fP
+.in +1c
+.TP
+\fB\fIfalse \fP\fP
+.TP
+\fB\fItrue \fP\fP
+.PP
+Définition à la ligne 11 du fichier main\&.h\&.
+.SS "enum \fBCOORDONNEES_2014_mm\fP"
+Coordonnées utiles de la coupe de 2014 
+.PP
+\fBNote:\fP
+.RS 4
+Le coin de référence est en haut à gauche 
+.RE
+.PP
+\fBA faire\fP
+.RS 4
+distances à définir 
+.RE
+.PP
+
+.PP
+\fBValeurs énumérées\fP
+.in +1c
+.TP
+\fB\fICOTE \fP\fP
+.TP
+\fB\fIAVANT \fP\fP
+.TP
+\fB\fIARRIERE \fP\fP
+.TP
+\fB\fIEST \fP\fP
+.TP
+\fB\fIOUEST \fP\fP
+.TP
+\fB\fICOIN_ROUGE \fP\fP
+.TP
+\fB\fICOIN_JAUNE \fP\fP
+.TP
+\fB\fINORD \fP\fP
+.TP
+\fB\fISUD \fP\fP
+.TP
+\fB\fIBAC \fP\fP
+.TP
+\fB\fIDEPART \fP\fP
+.TP
+\fB\fICOIN \fP\fP
+.TP
+\fB\fIARBRE \fP\fP
+.TP
+\fB\fIDISTANCE_EVITEMENT \fP\fP
+.TP
+\fB\fIDISTANCE_CALLAGE \fP\fP
+.TP
+\fB\fISORTIR_ZONE_DEPART \fP\fP
+.PP
+Définition à la ligne 30 du fichier main\&.h\&.
+.SS "enum \fBCouleur\fP"
+Les couleurs de départ 
+.PP
+\fBValeurs énumérées\fP
+.in +1c
+.TP
+\fB\fIJAUNE \fP\fP
+.TP
+\fB\fIROUGE \fP\fP
+.TP
+\fB\fICOULEUR_DEPART \fP\fP
+.TP
+\fB\fICOULEUR_OPPOSE \fP\fP
+.PP
+Définition à la ligne 56 du fichier main\&.h\&.
+.SS "enum \fBtypeMvt\fP"
+Type de mouvement pour le robot 
+.PP
+\fBValeurs énumérées\fP
+.in +1c
+.TP
+\fB\fIAVANCER \fP\fP
+.TP
+\fB\fIRECULER \fP\fP
+< côté plat en avant 
+.TP
+\fB\fIBOUGER \fP\fP
+< pointe en avant 
+.TP
+\fB\fICALLER \fP\fP
+< sens pour avancer indiférent < pour caller le robot contre un mur et mettre à jour ses coordonées 
+.PP
+Définition à la ligne 65 du fichier main\&.h\&.
+.SS "enum \fBTypeVitesse\fP"
+Vitesse de déplacement 
+.PP
+\fBValeurs énumérées\fP
+.in +1c
+.TP
+\fB\fIRAPIDE \fP\fP
+.TP
+\fB\fILENT \fP\fP
+.PP
+Définition à la ligne 75 du fichier main\&.h\&.
+.SH "Documentation des fonctions"
+.PP 
+.SS "int abs (intn)"
+
+.SS "void aller (\fBPos\fPposition)"
+
+.SS "int dansTable (int, int)"
+
+.SS "void faire (\fBAction\fPmouvement)"
+
+.SS "void machine ()"
+
+.SS "void verifierPosition ()"
+
+.SS "void verifierSharp ()"
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Petit Robot coupe 2014 à partir du code source\&.

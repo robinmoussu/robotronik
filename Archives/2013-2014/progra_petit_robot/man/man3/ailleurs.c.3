@@ -1,0 +1,158 @@
+.TH "ailleurs.c" 3 "Jeudi 22 Mai 2014" "Petit Robot coupe 2014" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ailleurs.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'ailleurs\&.h'\fP
+.br
+\fC#include 'comXbee\&.h'\fP
+.br
+\fC#include 'sharp\&.h'\fP
+.br
+\fC#include 'comAsser\&.h'\fP
+.br
+
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBset_ready\fP ()"
+.br
+.ti -1c
+.RI "void \fBwait_match_start\fP ()"
+.br
+.ti -1c
+.RI "\fBBool\fP \fBtimeEnd\fP ()"
+.br
+.ti -1c
+.RI "\fBBool\fP \fBpersonneDerriere\fP ()"
+.br
+.ti -1c
+.RI "\fBBool\fP \fBpersonneDevant\fP ()"
+.br
+.ti -1c
+.RI "\fBBool\fP \fBcolision\fP ()"
+.br
+.ti -1c
+.RI "\fBAngle\fP \fBgetAlphaAbs\fP ()"
+.br
+.ti -1c
+.RI "\fBCoordonne_mm\fP \fBgetPosX\fP ()"
+.br
+.ti -1c
+.RI "\fBCoordonne_mm\fP \fBgetPosY\fP ()"
+.br
+.ti -1c
+.RI "\fBBool\fP \fBassertAtteint\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "volatile char \fBtirette\fP"
+.br
+.ti -1c
+.RI "volatile char \fBfin\fP"
+.br
+.ti -1c
+.RI "int \fBdistance\fP"
+.br
+.ti -1c
+.RI "volatile \fBPos\fP \fBrobotNous\fP"
+.br
+.ti -1c
+.RI "volatile int \fBrequestGetXY\fP"
+.br
+.ti -1c
+.RI "volatile int \fBrequestGetAlpha\fP"
+.br
+.ti -1c
+.RI "volatile int \fBdoneAsser\fP"
+.br
+.in -1c
+.SH "Documentation des fonctions"
+.PP 
+.SS "\fBBool\fP assertAtteint ()"
+
+.PP
+Définition à la ligne 90 du fichier ailleurs\&.c\&.
+.SS "\fBBool\fP colision ()"
+
+.PP
+Définition à la ligne 50 du fichier ailleurs\&.c\&.
+.SS "\fBAngle\fP getAlphaAbs ()"
+
+.PP
+Définition à la ligne 66 du fichier ailleurs\&.c\&.
+.SS "\fBCoordonne_mm\fP getPosX ()"
+
+.PP
+Définition à la ligne 73 du fichier ailleurs\&.c\&.
+.SS "\fBCoordonne_mm\fP getPosY ()"
+
+.PP
+Définition à la ligne 80 du fichier ailleurs\&.c\&.
+.SS "\fBBool\fP personneDerriere ()"
+
+.PP
+Définition à la ligne 39 du fichier ailleurs\&.c\&.
+.SS "\fBBool\fP personneDevant ()"
+
+.PP
+Définition à la ligne 44 du fichier ailleurs\&.c\&.
+.SS "void set_ready ()"
+À exécuter quand le robot est prêt\&. Actuellement ne fait rien\&. 
+.PP
+\fBNote:\fP
+.RS 4
+Sans doute à virer 
+.RE
+.PP
+
+.PP
+Définition à la ligne 12 du fichier ailleurs\&.c\&.
+.SS "\fBBool\fP timeEnd ()"
+
+.PP
+Définition à la ligne 27 du fichier ailleurs\&.c\&.
+.SS "void wait_match_start ()"
+
+.PP
+Définition à la ligne 18 du fichier ailleurs\&.c\&.
+.SH "Documentation des variables"
+.PP 
+.SS "int distance"
+
+.PP
+Définition à la ligne 8 du fichier main_petit_robot\&.c\&.
+.SS "volatile int doneAsser"
+
+.PP
+Définition à la ligne 11 du fichier main_petit_robot\&.c\&.
+.SS "volatile char fin"
+
+.PP
+Définition à la ligne 26 du fichier ailleurs\&.c\&.
+.SS "volatile int requestGetAlpha"
+
+.PP
+Définition à la ligne 14 du fichier main_petit_robot\&.c\&.
+.SS "volatile int requestGetXY"
+
+.PP
+Définition à la ligne 13 du fichier main_petit_robot\&.c\&.
+.SS "volatile \fBPos\fP robotNous"
+
+.PP
+Définition à la ligne 9 du fichier main_petit_robot\&.c\&.
+.SS "volatile char tirette"
+
+.PP
+Définition à la ligne 17 du fichier ailleurs\&.c\&.
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Petit Robot coupe 2014 à partir du code source\&.

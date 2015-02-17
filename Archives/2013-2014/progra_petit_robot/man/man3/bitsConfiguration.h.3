@@ -1,0 +1,57 @@
+.TH "bitsConfiguration.h" 3 "Jeudi 22 Mai 2014" "Petit Robot coupe 2014" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bitsConfiguration.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "int FBS \fB__attribute__\fP ((space(prog), address(0xF80000)))=0xCF"
+.br
+.ti -1c
+.RI "int FSS \fB__attribute__\fP ((space(prog), address(0xF80002)))=0xCF"
+.br
+.ti -1c
+.RI "int FGS \fB__attribute__\fP ((space(prog), address(0xF80004)))=0x7"
+.br
+.ti -1c
+.RI "int FOSCSEL \fB__attribute__\fP ((space(prog), address(0xF80006)))=0x81"
+.br
+.ti -1c
+.RI "int FOSC \fB__attribute__\fP ((space(prog), address(0xF80008)))=0xE7"
+.br
+.ti -1c
+.RI "\fB_FWDT\fP (WDTPOST_PS32768 &WDTPRE_PR128 &WINDIS_OFF &FWDTEN_OFF)"
+.br
+.ti -1c
+.RI "int FPOR \fB__attribute__\fP ((space(prog), address(0xF8000C)))=0xF7"
+.br
+.ti -1c
+.RI "int FICD \fB__attribute__\fP ((space(prog), address(0xF8000E)))=0xFFDF"
+.br
+.in -1c
+.SH "Documentation des fonctions"
+.PP 
+.SS "int FBS __attribute__ ((space(prog), address(0xF80000)))\fC [pure virtual]\fP"
+
+.SS "int FSS __attribute__ ((space(prog), address(0xF80002)))\fC [pure virtual]\fP"
+
+.SS "int FGS __attribute__ ((space(prog), address(0xF80004)))\fC [pure virtual]\fP"
+
+.SS "int FOSCSEL __attribute__ ((space(prog), address(0xF80006)))\fC [pure virtual]\fP"
+
+.SS "int FOSC __attribute__ ((space(prog), address(0xF80008)))\fC [pure virtual]\fP"
+
+.SS "int FPOR __attribute__ ((space(prog), address(0xF8000C)))\fC [pure virtual]\fP"
+
+.SS "int FICD __attribute__ ((space(prog), address(0xF8000E)))\fC [pure virtual]\fP"
+
+.SS "_FWDT (WDTPOST_PS32768 &WDTPRE_PR128 &WINDIS_OFF &FWDTEN_OFF)"
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Petit Robot coupe 2014 à partir du code source\&.

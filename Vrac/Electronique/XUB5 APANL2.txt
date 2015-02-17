@@ -1,0 +1,7 @@
+5 : Diffuse system with adjustable sensitivity
+
+A : rien
+P : sortie PNP (à tirer à la masse)
+A : N/O (in opposition to "N/C")
+N : Along case axis (in opposition to "90° to case axis")
+L2 : câble de 2 m

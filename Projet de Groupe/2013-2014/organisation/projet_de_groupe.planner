@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+<project name="projet n&#xB0;6 : coupe de France de robotique" company="" manager="" phase="" project-start="20140131T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Travaill&#xE9;" description="Un jour de travail normal"/>
+      <day-type id="1" name="Ch&#xF4;m&#xE9;" description="Un jour ch&#xF4;m&#xE9; normal"/>
+      <day-type id="2" name="Utiliser la base" description="Utilise un jour du calendrier de base"/>
+      <day-type id="3" name="aprem" description=""/>
+      <day-type id="4" name="matin" description=""/>
+    </day-types>
+    <calendar id="1" name="D&#xE9;faut">
+      <default-week mon="1" tue="1" wed="1" thu="1" fri="3" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="4">
+          <interval start="0800" end="1200"/>
+        </overridden-day-type>
+        <overridden-day-type id="3">
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days>
+        <day date="20140502" type="day-type" id="1"/>
+        <day date="20140321" type="day-type" id="1"/>
+        <day date="20140320" type="day-type" id="4"/>
+        <day date="20140620" type="day-type" id="1"/>
+        <day date="20140530" type="day-type" id="1"/>
+        <day date="20140328" type="day-type" id="1"/>
+        <day date="20140307" type="day-type" id="1"/>
+        <day date="20140327" type="day-type" id="4"/>
+        <day date="20140627" type="day-type" id="1"/>
+        <day date="20140606" type="day-type" id="1"/>
+        <day date="20140404" type="day-type" id="1"/>
+        <day date="20140314" type="day-type" id="1"/>
+        <day date="20140221" type="day-type" id="1"/>
+        <day date="20140403" type="day-type" id="4"/>
+        <day date="20140313" type="day-type" id="4"/>
+        <day date="20140220" type="day-type" id="4"/>
+        <day date="20140613" type="day-type" id="1"/>
+        <day date="20140219" type="day-type" id="1"/>
+      </days>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="pr&#xE9;-projet" note="" work="129600" duration="43200" start="20140131T000000Z" end="20140214T170000Z" work-start="20140131T130000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration">
+      <task id="2" name="choix_techologie" note="" work="28800" duration="5800" start="20140131T000000Z" end="20140131T143640Z" work-start="20140131T130000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration">
+        <constraint type="must-start-on" time="20140131T000000Z"/>
+      </task>
+      <task id="3" name="budget" note="" work="28800" duration="28800" start="20140131T000000Z" end="20140207T170000Z" work-start="20140131T130000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration"/>
+      <task id="4" name="gantt" note="" work="28800" duration="28800" start="20140131T000000Z" end="20140207T170000Z" work-start="20140131T130000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration"/>
+      <task id="5" name="mat&#xE9;riel_de_test" note="" work="28800" duration="28800" start="20140131T000000Z" end="20140207T170000Z" work-start="20140131T130000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration"/>
+      <task id="6" name="test_initiaux" note="" work="14400" duration="14400" start="20140214T000000Z" end="20140214T170000Z" work-start="20140214T130000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration">
+        <constraint type="must-start-on" time="20140214T000000Z"/>
+      </task>
+    </task>
+    <task id="7" name="mat&#xE9;riel" note="" work="151200" start="20140220T000000Z" end="20140411T160000Z" work-start="20140220T080000Z" percent-complete="20" priority="0" type="normal" scheduling="fixed-work">
+      <task id="8" name="choix_capteur" note="" work="14400" duration="14400" start="20140220T000000Z" end="20140220T120000Z" work-start="20140220T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration">
+        <constraint type="must-start-on" time="20140220T000000Z"/>
+      </task>
+      <task id="9" name="emmission" note="" work="57600" start="20140220T120000Z" end="20140411T140000Z" work-start="20140228T130000Z" percent-complete="20" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="8" type="FS"/>
+        </predecessors>
+        <task id="10" name="sch&#xE9;ma_emmission" note="" work="14400" start="20140220T120000Z" end="20140228T170000Z" work-start="20140228T130000Z" percent-complete="30" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="6" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="11" name="test_emmission" note="" work="14400" start="20140228T170000Z" end="20140313T120000Z" work-start="20140313T080000Z" percent-complete="50" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="10" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="12" name="routage_emmission" note="" work="14400" start="20140327T090000Z" end="20140403T090000Z" work-start="20140327T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="16" type="FS"/>
+            <predecessor id="1" predecessor-id="11" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="13" name="souder_emmission" note="" work="14400" start="20140403T090000Z" end="20140411T140000Z" work-start="20140403T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="12" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="14" name="reception" note="" work="79200" start="20140220T120000Z" end="20140411T160000Z" work-start="20140228T130000Z" percent-complete="20" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="8" type="FS"/>
+        </predecessors>
+        <task id="15" name="sch&#xE9;ma_reception" note="" work="28800" duration="28800" start="20140220T120000Z" end="20140313T120000Z" work-start="20140228T130000Z" percent-complete="30" priority="0" type="normal" scheduling="fixed-duration"/>
+        <task id="16" name="test_reception" note="" work="3600" start="20140320T120000Z" end="20140327T090000Z" work-start="20140327T080000Z" percent-complete="50" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="34" type="FS"/>
+            <predecessor id="1" predecessor-id="15" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="17" name="routage_reception" note="" work="25200" start="20140327T090000Z" end="20140403T120000Z" work-start="20140327T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="11" type="FS"/>
+            <predecessor id="1" predecessor-id="16" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="18" name="souder_recepteur" note="" work="21600" start="20140403T120000Z" end="20140411T160000Z" work-start="20140411T130000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="17" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+    <task id="19" name="informatique" note="" work="129600" start="20140220T000000Z" end="20140403T120000Z" work-start="20140220T080000Z" percent-complete="30" priority="0" type="normal" scheduling="fixed-work">
+      <task id="20" name="protocole_positionnement" note="" work="14400" duration="14400" start="20140220T000000Z" end="20140220T120000Z" work-start="20140220T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration">
+        <constraint type="must-start-on" time="20140220T000000Z"/>
+      </task>
+      <task id="21" name="emission" note="" work="28800" start="20140327T000000Z" end="20140403T120000Z" work-start="20140327T080000Z" percent-complete="10" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="20" type="FS"/>
+        </predecessors>
+        <task id="22" name="emmission_porteuse" note="" work="14400" start="20140327T000000Z" end="20140327T120000Z" work-start="20140327T080000Z" percent-complete="10" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20140327T000000Z"/>
+        </task>
+        <task id="23" name="emmission_message" note="" work="14400" start="20140327T120000Z" end="20140403T120000Z" work-start="20140403T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="22" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="24" name="reception" note="" work="86400" start="20140220T120000Z" end="20140403T120000Z" work-start="20140228T130000Z" percent-complete="50" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="20" type="FS"/>
+        </predecessors>
+        <task id="25" name="reception_porteuse" note="" work="14400" duration="3600" start="20140220T120000Z" end="20140228T140000Z" work-start="20140228T130000Z" percent-complete="90" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="20" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="26" name="analyse_trame_A" note="" work="28800" start="20140220T120000Z" end="20140313T120000Z" work-start="20140228T130000Z" percent-complete="40" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="20" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="27" name="analyse_trame_B" note="" work="28800" start="20140320T120000Z" end="20140403T120000Z" work-start="20140327T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="34" type="FS"/>
+            <predecessor id="1" predecessor-id="26" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="28" name="lissage_capteur" note="" work="14400" start="20140228T140000Z" end="20140313T090000Z" work-start="20140228T140000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="25" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+    <task id="29" name="zigbee" note="" work="43200" start="20140227T000000Z" end="20140403T120000Z" work-start="20140228T130000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="1" type="FS"/>
+      </predecessors>
+      <task id="30" name="test_zigbee" note="" work="14400" start="20140227T000000Z" end="20140228T170000Z" work-start="20140228T130000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20140227T000000Z"/>
+      </task>
+      <task id="31" name="transfert_coordonn&#xE9;e" note="" work="14400" start="20140328T000000Z" end="20140403T120000Z" work-start="20140403T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20140328T000000Z"/>
+      </task>
+      <task id="32" name="sch&#xE9;ma_zigbee" note="" work="14400" start="20140228T170000Z" end="20140313T120000Z" work-start="20140313T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="30" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="33" name="mise_commun" note="" work="72000" start="20140320T000000Z" end="20140425T170000Z" work-start="20140320T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="34" name=" tampon" note="" work="14400" duration="14400" start="20140320T000000Z" end="20140320T120000Z" work-start="20140320T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+        <constraint type="must-start-on" time="20140320T000000Z"/>
+      </task>
+      <task id="35" name="trigonometrie" note="" work="28800" start="20140327T000000Z" end="20140403T120000Z" work-start="20140327T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20140327T000000Z"/>
+      </task>
+      <task id="36" name="debug_final" note="" work="28800" duration="28800" start="20140418T000000Z" end="20140425T170000Z" work-start="20140418T130000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+        <constraint type="must-start-on" time="20140418T000000Z"/>
+      </task>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources>
+    <resource id="1" name="robin moussu" short-name="robin" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="2" name="_wafa" short-name="_wafa" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="3" name="nicolas lorier" short-name="nicolas" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="4" name="ojeme" short-name="ojeme" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="5" name="_rania" short-name="_rania" type="1" units="0" email="" note="" std-rate="0"/>
+  </resources>
+  <allocations>
+    <allocation task-id="34" resource-id="1" units="20"/>
+    <allocation task-id="36" resource-id="1" units="20"/>
+    <allocation task-id="26" resource-id="1" units="100"/>
+    <allocation task-id="20" resource-id="1" units="33"/>
+    <allocation task-id="6" resource-id="1" units="20"/>
+    <allocation task-id="27" resource-id="1" units="100"/>
+    <allocation task-id="4" resource-id="1" units="100"/>
+    <allocation task-id="2" resource-id="1" units="99"/>
+    <allocation task-id="1" resource-id="1" units="20"/>
+    <allocation task-id="34" resource-id="2" units="20"/>
+    <allocation task-id="36" resource-id="2" units="20"/>
+    <allocation task-id="13" resource-id="2" units="100"/>
+    <allocation task-id="25" resource-id="2" units="400"/>
+    <allocation task-id="20" resource-id="2" units="33"/>
+    <allocation task-id="6" resource-id="2" units="20"/>
+    <allocation task-id="35" resource-id="2" units="100"/>
+    <allocation task-id="28" resource-id="2" units="100"/>
+    <allocation task-id="2" resource-id="2" units="99"/>
+    <allocation task-id="1" resource-id="2" units="20"/>
+    <allocation task-id="34" resource-id="3" units="20"/>
+    <allocation task-id="18" resource-id="3" units="100"/>
+    <allocation task-id="17" resource-id="3" units="100"/>
+    <allocation task-id="16" resource-id="3" units="100"/>
+    <allocation task-id="8" resource-id="3" units="50"/>
+    <allocation task-id="15" resource-id="3" units="100"/>
+    <allocation task-id="6" resource-id="3" units="20"/>
+    <allocation task-id="36" resource-id="3" units="20"/>
+    <allocation task-id="2" resource-id="3" units="99"/>
+    <allocation task-id="5" resource-id="3" units="100"/>
+    <allocation task-id="1" resource-id="3" units="20"/>
+    <allocation task-id="34" resource-id="4" units="20"/>
+    <allocation task-id="36" resource-id="4" units="20"/>
+    <allocation task-id="18" resource-id="4" units="100"/>
+    <allocation task-id="32" resource-id="4" units="100"/>
+    <allocation task-id="20" resource-id="4" units="33"/>
+    <allocation task-id="6" resource-id="4" units="20"/>
+    <allocation task-id="30" resource-id="4" units="100"/>
+    <allocation task-id="23" resource-id="4" units="100"/>
+    <allocation task-id="22" resource-id="4" units="100"/>
+    <allocation task-id="2" resource-id="4" units="99"/>
+    <allocation task-id="1" resource-id="4" units="20"/>
+    <allocation task-id="34" resource-id="5" units="20"/>
+    <allocation task-id="36" resource-id="5" units="20"/>
+    <allocation task-id="31" resource-id="5" units="100"/>
+    <allocation task-id="12" resource-id="5" units="100"/>
+    <allocation task-id="11" resource-id="5" units="100"/>
+    <allocation task-id="10" resource-id="5" units="100"/>
+    <allocation task-id="8" resource-id="5" units="50"/>
+    <allocation task-id="6" resource-id="5" units="20"/>
+    <allocation task-id="3" resource-id="5" units="100"/>
+    <allocation task-id="2" resource-id="5" units="99"/>
+    <allocation task-id="1" resource-id="5" units="20"/>
+  </allocations>
+</project>

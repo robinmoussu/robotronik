@@ -1,0 +1,72 @@
+.TH "Objectif" 3 "Jeudi 22 Mai 2014" "Petit Robot coupe 2014" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Objectif \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <main\&.h>\fP
+.SS "Champs de données"
+
+.in +1c
+.ti -1c
+.RI "\fBtypeMvt\fP \fBtypeMvt\fP"
+.br
+.ti -1c
+.RI "\fBTypeVitesse\fP \fBTypeVitesse\fP"
+.br
+.RI "\fI< Type de mouvement (avancer, reculer, ou quelconque) \fP"
+.ti -1c
+.RI "void(* \fBmvt\fP )(\fBCoordonne_mm\fP x, \fBCoordonne_mm\fP y)"
+.br
+.RI "\fI< Vittesse de déplacement \fP"
+.ti -1c
+.RI "\fBCoordonne_mm\fP \fBnextX\fP"
+.br
+.RI "\fI< Fonction de mouvement à appliquer (ex : avancer, reculer, bouger, caller, \&.\&.\&.) \fP"
+.ti -1c
+.RI "\fBCoordonne_mm\fP \fBnextY\fP"
+.br
+.RI "\fI< Coordonnées du point à atteindre par rapport à la couleur de référence \fP"
+.in -1c
+.SH "Description détaillée"
+.PP 
+Un objectif à atteindre 
+.PP
+Définition à la ligne 82 du fichier main\&.h\&.
+.SH "Documentation des champs"
+.PP 
+.SS "void(* mvt)(\fBCoordonne_mm\fP x, \fBCoordonne_mm\fP y)"
+
+.PP
+< Vittesse de déplacement 
+.PP
+Définition à la ligne 85 du fichier main\&.h\&.
+.SS "\fBCoordonne_mm\fP nextX"
+
+.PP
+< Fonction de mouvement à appliquer (ex : avancer, reculer, bouger, caller, \&.\&.\&.) 
+.PP
+Définition à la ligne 86 du fichier main\&.h\&.
+.SS "\fBCoordonne_mm\fP nextY"
+
+.PP
+< Coordonnées du point à atteindre par rapport à la couleur de référence 
+.PP
+Définition à la ligne 87 du fichier main\&.h\&.
+.SS "\fBtypeMvt\fP \fBtypeMvt\fP"
+
+.PP
+Définition à la ligne 83 du fichier main\&.h\&.
+.SS "\fBTypeVitesse\fP \fBTypeVitesse\fP"
+
+.PP
+< Type de mouvement (avancer, reculer, ou quelconque) 
+.PP
+Définition à la ligne 84 du fichier main\&.h\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Petit Robot coupe 2014 à partir du code source\&.

@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Localisation de robot:  Fichier source de calcul_position.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="phelma_logo_petit.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Localisation de robot
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">calcul_position.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00003.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">/*il faut verifier si Pi ( 3,14...) existe sur le pic ou pas , sinon il faut la d�finir )*/</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00004.html">calcul_position.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="a00003.html#a0c233fcb94ea9f05596b48427095806e">    7</a></span>&#160;<span class="preprocessor">#define Pi 3.14</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="a00004.html#aa4b3dba91d3abc8e2fe45172b87b48ab">   10</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="a00003.html#aa4b3dba91d3abc8e2fe45172b87b48ab">angle</a>( <a class="code" href="a00006.html#a39db6982619d623273fad8a383489309">Bool</a> e_1[], <a class="code" href="a00006.html#a39db6982619d623273fad8a383489309">Bool</a> e_2[] )</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">int</span> a, b ;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    a=<a class="code" href="a00003.html#a9dbb0b20837f692f728359fbc6248687">lissage</a>(e_1);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    b=<a class="code" href="a00003.html#a9dbb0b20837f692f728359fbc6248687">lissage</a>(e_2);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">return</span>(<a class="code" href="a00003.html#a0c233fcb94ea9f05596b48427095806e">Pi</a>*b-<a class="code" href="a00003.html#a0c233fcb94ea9f05596b48427095806e">Pi</a>*a);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="a00004.html#a8a5ad3a4314ea89ee42625fbcd0b2130">   18</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="a00003.html#a8a5ad3a4314ea89ee42625fbcd0b2130">calcul_bar</a>(<span class="keywordtype">float</span> teta, <span class="keywordtype">float</span> alpha , <span class="keywordtype">float</span> gama, <span class="keywordtype">float</span> d ,<span class="keywordtype">float</span> l)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">float</span> a ;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    a=sin(alpha)*((d*cos(teta-gama)-l*sin(gama))/(d*sin(teta-gama)+l*tan(alpha)*sin(gama)));</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span>( atan(a) );</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="a00004.html#aed688029e813f1a41e3f031b404df6a4">   25</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="a00003.html#aed688029e813f1a41e3f031b404df6a4">abscisse</a>(<span class="keywordtype">float</span> alpha ,<span class="keywordtype">float</span> beta ,<span class="keywordtype">float</span> gama, <span class="keywordtype">float</span> l, <span class="keywordtype">float</span> bar )</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{ </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> (l*(sin(bar)*sin(bar))*((1/tan(alpha))+(1/tan(bar))));</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="a00004.html#aac4d532b68bbb3749e77054e27bf8a07">   30</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="a00003.html#aac4d532b68bbb3749e77054e27bf8a07">ordonnee</a>(<span class="keywordtype">float</span> alpha ,<span class="keywordtype">float</span> beta ,<span class="keywordtype">float</span> gama, <span class="keywordtype">float</span> l, <span class="keywordtype">float</span> bar )</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{ </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> l*(sin(bar)*sin(bar))*(1-(1/tan(alpha))*(1/tan(bar)));</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00004.html#a55401ab3d83de6397ee1ce0194653427">   35</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00003.html#a55401ab3d83de6397ee1ce0194653427">calcul_angle</a>(<a class="code" href="a00006.html#a39db6982619d623273fad8a383489309">Bool</a> e_1[], <a class="code" href="a00006.html#a39db6982619d623273fad8a383489309">Bool</a> e_2[], <a class="code" href="a00006.html#a39db6982619d623273fad8a383489309">Bool</a> e_3[], <span class="keywordtype">float</span> bar,<span class="keywordtype">float</span> l)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">float</span> alpha , beta , gama,teta;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">float</span> x,y;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">float</span> d; <span class="comment">// je ne sais pas ce que c&#39;est, je l&#39;ai ajouter pour que ça compile (robin)</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    alpha=<a class="code" href="a00003.html#aa4b3dba91d3abc8e2fe45172b87b48ab">angle</a>(e_1,e_2);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    beta=<a class="code" href="a00003.html#aa4b3dba91d3abc8e2fe45172b87b48ab">angle</a>(e_2,e_3);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    gama=2*<a class="code" href="a00003.html#a0c233fcb94ea9f05596b48427095806e">Pi</a>-<a class="code" href="a00003.html#aa4b3dba91d3abc8e2fe45172b87b48ab">angle</a>(e_1,e_3);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    teta=atan(l/(2*d));</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    bar=<a class="code" href="a00003.html#a8a5ad3a4314ea89ee42625fbcd0b2130">calcul_bar</a>(teta,alpha ,gama,d ,l);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    x = <a class="code" href="a00003.html#aed688029e813f1a41e3f031b404df6a4">abscisse</a>(alpha, beta, gama,l,bar);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    y = <a class="code" href="a00003.html#aac4d532b68bbb3749e77054e27bf8a07">ordonnee</a>(alpha, beta, gama,l,bar);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    printf(<span class="stringliteral">&quot;l&#39;abscisse est %f&quot;</span>,x);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    printf(<span class="stringliteral">&quot;ordonnée est %f&quot;</span>,y);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;   <span class="comment">//send_xbee(x);</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; <span class="comment">//send_xbee(y);</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="a00004.html#a9dbb0b20837f692f728359fbc6248687">   59</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="a00003.html#a9dbb0b20837f692f728359fbc6248687">lissage</a>(<a class="code" href="a00006.html#a39db6982619d623273fad8a383489309">Bool</a> etat_capteur[])</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00021.html#acb559820d9ca11295b4500f179ef6392">i</a> ;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> S=0 ;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> n=0 ;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">for</span>(i=0;i&lt;<a class="code" href="a00018.html#ad2964763d24c123daaff4abe0e3d748f">NB_CAPTEUR</a>;i++) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">if</span> (etat_capteur[i]==1) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            S=S+<a class="code" href="a00021.html#acb559820d9ca11295b4500f179ef6392">i</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            n=n+1;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    S=S/n ;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> S;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="ttc" id="a00003_html_aed688029e813f1a41e3f031b404df6a4"><div class="ttname"><a href="a00003.html#aed688029e813f1a41e3f031b404df6a4">abscisse</a></div><div class="ttdeci">float abscisse(float alpha, float beta, float gama, float l, float bar)</div><div class="ttdef"><b>Definition:</b> <a href="a00003_source.html#l00025">calcul_position.c:25</a></div></div>
+<div class="ttc" id="a00003_html_aac4d532b68bbb3749e77054e27bf8a07"><div class="ttname"><a href="a00003.html#aac4d532b68bbb3749e77054e27bf8a07">ordonnee</a></div><div class="ttdeci">float ordonnee(float alpha, float beta, float gama, float l, float bar)</div><div class="ttdef"><b>Definition:</b> <a href="a00003_source.html#l00030">calcul_position.c:30</a></div></div>
+<div class="ttc" id="a00003_html_a8a5ad3a4314ea89ee42625fbcd0b2130"><div class="ttname"><a href="a00003.html#a8a5ad3a4314ea89ee42625fbcd0b2130">calcul_bar</a></div><div class="ttdeci">float calcul_bar(float teta, float alpha, float gama, float d, float l)</div><div class="ttdef"><b>Definition:</b> <a href="a00003_source.html#l00018">calcul_position.c:18</a></div></div>
+<div class="ttc" id="a00003_html_a9dbb0b20837f692f728359fbc6248687"><div class="ttname"><a href="a00003.html#a9dbb0b20837f692f728359fbc6248687">lissage</a></div><div class="ttdeci">int lissage(Bool etat_capteur[])</div><div class="ttdoc">"Lisse les capteur" Si plusieurs bit d&#39;un capteur sont actif en même temps (ce qui signifie que la mê...</div><div class="ttdef"><b>Definition:</b> <a href="a00003_source.html#l00059">calcul_position.c:59</a></div></div>
+<div class="ttc" id="a00003_html_a55401ab3d83de6397ee1ce0194653427"><div class="ttname"><a href="a00003.html#a55401ab3d83de6397ee1ce0194653427">calcul_angle</a></div><div class="ttdeci">void calcul_angle(Bool e_1[], Bool e_2[], Bool e_3[], float bar, float l)</div><div class="ttdef"><b>Definition:</b> <a href="a00003_source.html#l00035">calcul_position.c:35</a></div></div>
+<div class="ttc" id="a00018_html_ad2964763d24c123daaff4abe0e3d748f"><div class="ttname"><a href="a00018.html#ad2964763d24c123daaff4abe0e3d748f">NB_CAPTEUR</a></div><div class="ttdeci">#define NB_CAPTEUR</div><div class="ttdef"><b>Definition:</b> <a href="a00018_source.html#l00053">reception.h:53</a></div></div>
+<div class="ttc" id="a00003_html_a0c233fcb94ea9f05596b48427095806e"><div class="ttname"><a href="a00003.html#a0c233fcb94ea9f05596b48427095806e">Pi</a></div><div class="ttdeci">#define Pi</div><div class="ttdef"><b>Definition:</b> <a href="a00003_source.html#l00007">calcul_position.c:7</a></div></div>
+<div class="ttc" id="a00006_html_a39db6982619d623273fad8a383489309"><div class="ttname"><a href="a00006.html#a39db6982619d623273fad8a383489309">Bool</a></div><div class="ttdeci">Bool</div><div class="ttdef"><b>Definition:</b> <a href="a00006_source.html#l00007">common.h:7</a></div></div>
+<div class="ttc" id="a00003_html_aa4b3dba91d3abc8e2fe45172b87b48ab"><div class="ttname"><a href="a00003.html#aa4b3dba91d3abc8e2fe45172b87b48ab">angle</a></div><div class="ttdeci">float angle(Bool e_1[], Bool e_2[])</div><div class="ttdef"><b>Definition:</b> <a href="a00003_source.html#l00010">calcul_position.c:10</a></div></div>
+<div class="ttc" id="a00021_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="a00021.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttdeci">int i</div><div class="ttdef"><b>Definition:</b> <a href="a00021_source.html#l00020">test_ordonnanceur.c:20</a></div></div>
+<div class="ttc" id="a00004_html"><div class="ttname"><a href="a00004.html">calcul_position.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Mardi 20 Mai 2014 21:37:34 pour Localisation de robot par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

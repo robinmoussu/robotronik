@@ -1,0 +1,200 @@
+\hypertarget{main__petit__robot_8c}{\section{Référence du fichier main\+\_\+petit\+\_\+robot.\+c}
+\label{main__petit__robot_8c}\index{main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}}
+}
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}coordonees.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}mouvement.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}strategie.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}sharp.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}com\+Asser.\+h\char`\"{}}\\*
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main__petit__robot_8c_abf9e6b7e6f15df4b525a2e7705ba3089}{main} (int argc, char const $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile int \hyperlink{main__petit__robot_8c_af419fa826f06c3f9412c5b893aa42bda}{distance}
+\item 
+volatile \hyperlink{struct_pos}{Pos} \hyperlink{main__petit__robot_8c_a461199c10a9d7b3017fd0926ed2fafe1}{robot\+Nous}
+\item 
+volatile \hyperlink{struct_pos}{Pos} \hyperlink{main__petit__robot_8c_a1427262fa2960ead4970fc57e1a903de}{robot1}
+\item 
+volatile int \hyperlink{main__petit__robot_8c_a034f20371a928d6aa655794a776425fe}{done\+Asser} = 1
+\item 
+volatile int \hyperlink{main__petit__robot_8c_a2894008a29dff446daf694a3d8d936c0}{stop\+Sharp} = 0
+\item 
+volatile int \hyperlink{main__petit__robot_8c_a4d8d7734b684af80b2d0927e48e2d569}{request\+Get\+X\+Y} = 0
+\item 
+volatile int \hyperlink{main__petit__robot_8c_adce2f87720c4b6fe0b94381a478b298b}{request\+Get\+Alpha} = 0
+\item 
+volatile char \hyperlink{main__petit__robot_8c_ab162f0101353c88c10cd51ff6fab4c36}{ignore\+Sharp}
+\item 
+volatile char \hyperlink{main__petit__robot_8c_a06c8d133396d8710b7cb022cdea65956}{force\+Ignore\+Sharp} =1
+\item 
+volatile char \hyperlink{main__petit__robot_8c_af5fd20da8631be63d98539df62daa1e3}{tirette} = 0
+\item 
+volatile char \hyperlink{main__petit__robot_8c_ab377ad9de19da7339b818ceb00df1f79}{fin} = 0
+\item 
+volatile unsigned char \hyperlink{main__petit__robot_8c_ac62fea3104dfbdadbe14237a768f6a57}{tx\+Buffer} \mbox{[}\hyperlink{uart__xbee_8c_a9ab33647617098646990fe263600b650}{T\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}\mbox{]}
+\item 
+volatile short \hyperlink{main__petit__robot_8c_a48b710dbf1e1c8a97c79b12aea0f9616}{index\+Tx\+Buffer}
+\item 
+volatile short \hyperlink{main__petit__robot_8c_a30ca8d135515e39de8135a1de3f8a469}{tx\+Buffer\+Length}
+\item 
+volatile unsigned char \hyperlink{main__petit__robot_8c_aadc0a2ea0f5fa2be5f4c3cb076886643}{tx2\+Buffer} \mbox{[}\hyperlink{uart__xbee_8c_a9ab33647617098646990fe263600b650}{T\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}\mbox{]}
+\item 
+volatile short \hyperlink{main__petit__robot_8c_a13fb909d528d996eee6e35732f6ce858}{index\+Tx2\+Buffer}
+\item 
+volatile short \hyperlink{main__petit__robot_8c_a8b118f2477ed4c3f3a93454d37c14f4a}{tx2\+Buffer\+Length}
+\item 
+\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur} \hyperlink{main__petit__robot_8c_af0e152d09c13944935e00bef7a3c5111}{couleur}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{main__petit__robot_8c_abf9e6b7e6f15df4b525a2e7705ba3089}{\index{main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}!main@{main}}
+\index{main@{main}!main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char const $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{main__petit__robot_8c_abf9e6b7e6f15df4b525a2e7705ba3089}
+Le parcourt du robot \begin{DoxyNote}{Note}
+À définir dans le main.
+\end{DoxyNote}
+
+
+Définition à la ligne 34 du fichier main\+\_\+petit\+\_\+robot.\+c.
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{main__petit__robot_8c_af0e152d09c13944935e00bef7a3c5111}{\index{main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}!couleur@{couleur}}
+\index{couleur@{couleur}!main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}}
+\subsubsection[{couleur}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Couleur} couleur}}\label{main__petit__robot_8c_af0e152d09c13944935e00bef7a3c5111}
+
+
+Définition à la ligne 30 du fichier main\+\_\+petit\+\_\+robot.\+c.
+
+\hypertarget{main__petit__robot_8c_af419fa826f06c3f9412c5b893aa42bda}{\index{main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}!distance@{distance}}
+\index{distance@{distance}!main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}}
+\subsubsection[{distance}]{\setlength{\rightskip}{0pt plus 5cm}volatile int distance}}\label{main__petit__robot_8c_af419fa826f06c3f9412c5b893aa42bda}
+
+
+Définition à la ligne 8 du fichier main\+\_\+petit\+\_\+robot.\+c.
+
+\hypertarget{main__petit__robot_8c_a034f20371a928d6aa655794a776425fe}{\index{main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}!done\+Asser@{done\+Asser}}
+\index{done\+Asser@{done\+Asser}!main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}}
+\subsubsection[{done\+Asser}]{\setlength{\rightskip}{0pt plus 5cm}volatile int done\+Asser = 1}}\label{main__petit__robot_8c_a034f20371a928d6aa655794a776425fe}
+
+
+Définition à la ligne 11 du fichier main\+\_\+petit\+\_\+robot.\+c.
+
+\hypertarget{main__petit__robot_8c_ab377ad9de19da7339b818ceb00df1f79}{\index{main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}!fin@{fin}}
+\index{fin@{fin}!main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}}
+\subsubsection[{fin}]{\setlength{\rightskip}{0pt plus 5cm}volatile char fin = 0}}\label{main__petit__robot_8c_ab377ad9de19da7339b818ceb00df1f79}
+
+
+Définition à la ligne 20 du fichier main\+\_\+petit\+\_\+robot.\+c.
+
+\hypertarget{main__petit__robot_8c_a06c8d133396d8710b7cb022cdea65956}{\index{main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}!force\+Ignore\+Sharp@{force\+Ignore\+Sharp}}
+\index{force\+Ignore\+Sharp@{force\+Ignore\+Sharp}!main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}}
+\subsubsection[{force\+Ignore\+Sharp}]{\setlength{\rightskip}{0pt plus 5cm}volatile char force\+Ignore\+Sharp =1}}\label{main__petit__robot_8c_a06c8d133396d8710b7cb022cdea65956}
+
+
+Définition à la ligne 17 du fichier main\+\_\+petit\+\_\+robot.\+c.
+
+\hypertarget{main__petit__robot_8c_ab162f0101353c88c10cd51ff6fab4c36}{\index{main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}!ignore\+Sharp@{ignore\+Sharp}}
+\index{ignore\+Sharp@{ignore\+Sharp}!main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}}
+\subsubsection[{ignore\+Sharp}]{\setlength{\rightskip}{0pt plus 5cm}volatile char ignore\+Sharp}}\label{main__petit__robot_8c_ab162f0101353c88c10cd51ff6fab4c36}
+
+
+Définition à la ligne 16 du fichier main\+\_\+petit\+\_\+robot.\+c.
+
+\hypertarget{main__petit__robot_8c_a13fb909d528d996eee6e35732f6ce858}{\index{main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}!index\+Tx2\+Buffer@{index\+Tx2\+Buffer}}
+\index{index\+Tx2\+Buffer@{index\+Tx2\+Buffer}!main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}}
+\subsubsection[{index\+Tx2\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}volatile short index\+Tx2\+Buffer}}\label{main__petit__robot_8c_a13fb909d528d996eee6e35732f6ce858}
+
+
+Définition à la ligne 27 du fichier main\+\_\+petit\+\_\+robot.\+c.
+
+\hypertarget{main__petit__robot_8c_a48b710dbf1e1c8a97c79b12aea0f9616}{\index{main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}!index\+Tx\+Buffer@{index\+Tx\+Buffer}}
+\index{index\+Tx\+Buffer@{index\+Tx\+Buffer}!main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}}
+\subsubsection[{index\+Tx\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}volatile short index\+Tx\+Buffer}}\label{main__petit__robot_8c_a48b710dbf1e1c8a97c79b12aea0f9616}
+
+
+Définition à la ligne 23 du fichier main\+\_\+petit\+\_\+robot.\+c.
+
+\hypertarget{main__petit__robot_8c_adce2f87720c4b6fe0b94381a478b298b}{\index{main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}!request\+Get\+Alpha@{request\+Get\+Alpha}}
+\index{request\+Get\+Alpha@{request\+Get\+Alpha}!main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}}
+\subsubsection[{request\+Get\+Alpha}]{\setlength{\rightskip}{0pt plus 5cm}volatile int request\+Get\+Alpha = 0}}\label{main__petit__robot_8c_adce2f87720c4b6fe0b94381a478b298b}
+
+
+Définition à la ligne 14 du fichier main\+\_\+petit\+\_\+robot.\+c.
+
+\hypertarget{main__petit__robot_8c_a4d8d7734b684af80b2d0927e48e2d569}{\index{main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}!request\+Get\+X\+Y@{request\+Get\+X\+Y}}
+\index{request\+Get\+X\+Y@{request\+Get\+X\+Y}!main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}}
+\subsubsection[{request\+Get\+X\+Y}]{\setlength{\rightskip}{0pt plus 5cm}volatile int request\+Get\+X\+Y = 0}}\label{main__petit__robot_8c_a4d8d7734b684af80b2d0927e48e2d569}
+
+
+Définition à la ligne 13 du fichier main\+\_\+petit\+\_\+robot.\+c.
+
+\hypertarget{main__petit__robot_8c_a1427262fa2960ead4970fc57e1a903de}{\index{main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}!robot1@{robot1}}
+\index{robot1@{robot1}!main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}}
+\subsubsection[{robot1}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf Pos} robot1}}\label{main__petit__robot_8c_a1427262fa2960ead4970fc57e1a903de}
+
+
+Définition à la ligne 10 du fichier main\+\_\+petit\+\_\+robot.\+c.
+
+\hypertarget{main__petit__robot_8c_a461199c10a9d7b3017fd0926ed2fafe1}{\index{main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}!robot\+Nous@{robot\+Nous}}
+\index{robot\+Nous@{robot\+Nous}!main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}}
+\subsubsection[{robot\+Nous}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf Pos} robot\+Nous}}\label{main__petit__robot_8c_a461199c10a9d7b3017fd0926ed2fafe1}
+
+
+Définition à la ligne 9 du fichier main\+\_\+petit\+\_\+robot.\+c.
+
+\hypertarget{main__petit__robot_8c_a2894008a29dff446daf694a3d8d936c0}{\index{main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}!stop\+Sharp@{stop\+Sharp}}
+\index{stop\+Sharp@{stop\+Sharp}!main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}}
+\subsubsection[{stop\+Sharp}]{\setlength{\rightskip}{0pt plus 5cm}volatile int stop\+Sharp = 0}}\label{main__petit__robot_8c_a2894008a29dff446daf694a3d8d936c0}
+
+
+Définition à la ligne 12 du fichier main\+\_\+petit\+\_\+robot.\+c.
+
+\hypertarget{main__petit__robot_8c_af5fd20da8631be63d98539df62daa1e3}{\index{main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}!tirette@{tirette}}
+\index{tirette@{tirette}!main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}}
+\subsubsection[{tirette}]{\setlength{\rightskip}{0pt plus 5cm}volatile char tirette = 0}}\label{main__petit__robot_8c_af5fd20da8631be63d98539df62daa1e3}
+
+
+Définition à la ligne 19 du fichier main\+\_\+petit\+\_\+robot.\+c.
+
+\hypertarget{main__petit__robot_8c_aadc0a2ea0f5fa2be5f4c3cb076886643}{\index{main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}!tx2\+Buffer@{tx2\+Buffer}}
+\index{tx2\+Buffer@{tx2\+Buffer}!main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}}
+\subsubsection[{tx2\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}volatile unsigned char tx2\+Buffer\mbox{[}{\bf T\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}\mbox{]}}}\label{main__petit__robot_8c_aadc0a2ea0f5fa2be5f4c3cb076886643}
+
+
+Définition à la ligne 26 du fichier main\+\_\+petit\+\_\+robot.\+c.
+
+\hypertarget{main__petit__robot_8c_a8b118f2477ed4c3f3a93454d37c14f4a}{\index{main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}!tx2\+Buffer\+Length@{tx2\+Buffer\+Length}}
+\index{tx2\+Buffer\+Length@{tx2\+Buffer\+Length}!main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}}
+\subsubsection[{tx2\+Buffer\+Length}]{\setlength{\rightskip}{0pt plus 5cm}volatile short tx2\+Buffer\+Length}}\label{main__petit__robot_8c_a8b118f2477ed4c3f3a93454d37c14f4a}
+
+
+Définition à la ligne 28 du fichier main\+\_\+petit\+\_\+robot.\+c.
+
+\hypertarget{main__petit__robot_8c_ac62fea3104dfbdadbe14237a768f6a57}{\index{main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}!tx\+Buffer@{tx\+Buffer}}
+\index{tx\+Buffer@{tx\+Buffer}!main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}}
+\subsubsection[{tx\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}volatile unsigned char tx\+Buffer\mbox{[}{\bf T\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}\mbox{]}}}\label{main__petit__robot_8c_ac62fea3104dfbdadbe14237a768f6a57}
+
+
+Définition à la ligne 22 du fichier main\+\_\+petit\+\_\+robot.\+c.
+
+\hypertarget{main__petit__robot_8c_a30ca8d135515e39de8135a1de3f8a469}{\index{main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}!tx\+Buffer\+Length@{tx\+Buffer\+Length}}
+\index{tx\+Buffer\+Length@{tx\+Buffer\+Length}!main\+\_\+petit\+\_\+robot.\+c@{main\+\_\+petit\+\_\+robot.\+c}}
+\subsubsection[{tx\+Buffer\+Length}]{\setlength{\rightskip}{0pt plus 5cm}volatile short tx\+Buffer\+Length}}\label{main__petit__robot_8c_a30ca8d135515e39de8135a1de3f8a469}
+
+
+Définition à la ligne 24 du fichier main\+\_\+petit\+\_\+robot.\+c.
+

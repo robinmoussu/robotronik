@@ -1,0 +1,427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Localisation de robot: Référence du fichier calcul_position.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="phelma_logo_petit.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Localisation de robot
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier calcul_position.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00005_source.html">calcul_position.h</a>&quot;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+</div>
+<p><a href="a00004_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a0c233fcb94ea9f05596b48427095806e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a0c233fcb94ea9f05596b48427095806e">Pi</a>&#160;&#160;&#160;3.14</td></tr>
+<tr class="separator:a0c233fcb94ea9f05596b48427095806e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a9dbb0b20837f692f728359fbc6248687"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a9dbb0b20837f692f728359fbc6248687">lissage</a> (<a class="el" href="a00007.html#a39db6982619d623273fad8a383489309">Bool</a> etat_capteur[])</td></tr>
+<tr class="separator:a9dbb0b20837f692f728359fbc6248687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b3dba91d3abc8e2fe45172b87b48ab"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#aa4b3dba91d3abc8e2fe45172b87b48ab">angle</a> (<a class="el" href="a00007.html#a39db6982619d623273fad8a383489309">Bool</a> e_1[], <a class="el" href="a00007.html#a39db6982619d623273fad8a383489309">Bool</a> e_2[])</td></tr>
+<tr class="separator:aa4b3dba91d3abc8e2fe45172b87b48ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a5ad3a4314ea89ee42625fbcd0b2130"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a8a5ad3a4314ea89ee42625fbcd0b2130">calcul_bar</a> (float teta, float alpha, float gama, float d, float l)</td></tr>
+<tr class="separator:a8a5ad3a4314ea89ee42625fbcd0b2130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed688029e813f1a41e3f031b404df6a4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#aed688029e813f1a41e3f031b404df6a4">abscisse</a> (float alpha, float beta, float gama, float l, float bar)</td></tr>
+<tr class="separator:aed688029e813f1a41e3f031b404df6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac4d532b68bbb3749e77054e27bf8a07"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#aac4d532b68bbb3749e77054e27bf8a07">ordonnee</a> (float alpha, float beta, float gama, float l, float bar)</td></tr>
+<tr class="separator:aac4d532b68bbb3749e77054e27bf8a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a37c9bfdc867bc8533033c4b1a2ede3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a2a37c9bfdc867bc8533033c4b1a2ede3">calcul_coordonnees</a> (<a class="el" href="a00007.html#a39db6982619d623273fad8a383489309">Bool</a> e_1[], <a class="el" href="a00007.html#a39db6982619d623273fad8a383489309">Bool</a> e_2[], <a class="el" href="a00007.html#a39db6982619d623273fad8a383489309">Bool</a> e_3[], float l, float d)</td></tr>
+<tr class="separator:a2a37c9bfdc867bc8533033c4b1a2ede3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des macros</h2>
+<a class="anchor" id="a0c233fcb94ea9f05596b48427095806e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Pi&#160;&#160;&#160;3.14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00004_source.html#l00007">7</a> du fichier <a class="el" href="a00004_source.html">calcul_position.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="aed688029e813f1a41e3f031b404df6a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float abscisse </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>gama</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>bar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>calcule l'abscisse de la position du robot l'expression de l'abscisse est déterminée en s'appyant sur la méthode de trianguation et des angles alpha, beta, gamma, BAR déja calculé </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">teta</td><td>voir image </td></tr>
+    <tr><td class="paramname">alpha</td><td>voir image </td></tr>
+    <tr><td class="paramname">gamma</td><td>voir image </td></tr>
+    <tr><td class="paramname">beta</td><td>voir image </td></tr>
+    <tr><td class="paramname">l</td><td>largeur de la table du jeu </td></tr>
+    <tr><td class="paramname">bar</td><td>voir image </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="a00004_source.html#l00047">47</a> du fichier <a class="el" href="a00004_source.html">calcul_position.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa4b3dba91d3abc8e2fe45172b87b48ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float angle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00007.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td>
+          <td class="paramname"><em>e_1</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00007.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td>
+          <td class="paramname"><em>e_2</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>calcule l'angle entre deux capteurs actifs Après lissage des états des capteurs, on a que 3 capteurs actifs qui sont pris en compte ( 1 capteur pour chaque balise ). Etant donné que l'angle entre deux capteurs quelconques placés sur le robot est connu ( n*(Pi/8) ) , on détermine l'angle entre deux capteurs actifs de la tourelle réceptrice. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e_1</td><td>Le tableau des états de capteurs de la dectection de la balise 1 </td></tr>
+    <tr><td class="paramname">e_2</td><td>Le tableau des états de capteurs de la détection de la balise 2  la valeur de l'angle entre les deux capteurs actifs. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="a00004_source.html#l00029">29</a> du fichier <a class="el" href="a00004_source.html">calcul_position.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8a5ad3a4314ea89ee42625fbcd0b2130"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float calcul_bar </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>teta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>gama</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>l</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>calcul l'angle BAR Dans la methode de triangulation qu'on utilise pour determiner la position du robot, on a besoin de déterminer la valeur de cet angle dont l'expression est tirée à partir du calcul trigonométrique. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">teta</td><td>voir image </td></tr>
+    <tr><td class="paramname">alpha</td><td>voir image </td></tr>
+    <tr><td class="paramname">gamma</td><td>voir image </td></tr>
+    <tr><td class="paramname">d</td><td>longeur de la table du jeu </td></tr>
+    <tr><td class="paramname">l</td><td>largeur de la table du jeu  valeur de l'angle BAR </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="a00004_source.html#l00040">40</a> du fichier <a class="el" href="a00004_source.html">calcul_position.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2a37c9bfdc867bc8533033c4b1a2ede3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calcul_coordonnees </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00007.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td>
+          <td class="paramname"><em>e_1</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00007.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td>
+          <td class="paramname"><em>e_2</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00007.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td>
+          <td class="paramname"><em>e_3</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>calcule la position du robot Au vu des différenet paramétres determinés par les fonctions précedentes , on calcule la position du robot adverse ( X,Y) sur la table du jeu qui sera ensuite communiqué à notre robot </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e_1</td><td>Le tableau des états de capteurs de la dectection de la balise 1 </td></tr>
+    <tr><td class="paramname">e_2</td><td>Le tableau des états de capteurs de la détection de la balise 2 </td></tr>
+    <tr><td class="paramname">e_3</td><td>Le tableau des états de capteurs de la détection de la balise 3 </td></tr>
+    <tr><td class="paramname">d</td><td>longeur de la table du jeu </td></tr>
+    <tr><td class="paramname">l</td><td>largeur de la table du jeu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="a00004_source.html#l00057">57</a> du fichier <a class="el" href="a00004_source.html">calcul_position.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9dbb0b20837f692f728359fbc6248687"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lissage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00007.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td>
+          <td class="paramname"><em>etat_capteur</em>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>"Lisse les capteurs" Chaque tableau de type Bool nous informe sur l'état des capteurs en prenant en compte que l'une des trois balises émetrices, autrement dit chaque balise est detectée séparement des autres. Si plusieurs bits d'un capteur sont actifs en même temps (ce qui signifie que la même balise est détectée plusieurs fois), alors, il faut qu'il n'en reste plus qu'un. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">etat_capteur</td><td>Le tableau de bits correspondant aux capteurs actifs </td></tr>
+    <tr><td class="paramname">position</td><td>Position de la tourelle (la moyenne de la position des capteurs) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="a00004_source.html#l00009">9</a> du fichier <a class="el" href="a00004_source.html">calcul_position.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac4d532b68bbb3749e77054e27bf8a07"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ordonnee </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>gama</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>bar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>calcule l'ordonnée de la position du robot</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">teta</td><td>voir image </td></tr>
+    <tr><td class="paramname">alpha</td><td>voir image </td></tr>
+    <tr><td class="paramname">gamma</td><td>voir image </td></tr>
+    <tr><td class="paramname">beta</td><td>voir image </td></tr>
+    <tr><td class="paramname">l</td><td>largeur de la table du jeu </td></tr>
+    <tr><td class="paramname">bar</td><td>voir image </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="a00004_source.html#l00051">51</a> du fichier <a class="el" href="a00004_source.html">calcul_position.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Lundi 26 Mai 2014 08:30:03 pour Localisation de robot par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

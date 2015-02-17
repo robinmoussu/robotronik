@@ -1,0 +1,176 @@
+.TH "main_petit_robot.c" 3 "Jeudi 22 Mai 2014" "Petit Robot coupe 2014" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main_petit_robot.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'main\&.h'\fP
+.br
+\fC#include 'coordonees\&.h'\fP
+.br
+\fC#include 'mouvement\&.h'\fP
+.br
+\fC#include 'strategie\&.h'\fP
+.br
+\fC#include 'sharp\&.h'\fP
+.br
+\fC#include 'comAsser\&.h'\fP
+.br
+
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "int \fBmain\fP (int argc, char const *argv[])"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "volatile int \fBdistance\fP"
+.br
+.ti -1c
+.RI "volatile \fBPos\fP \fBrobotNous\fP"
+.br
+.ti -1c
+.RI "volatile \fBPos\fP \fBrobot1\fP"
+.br
+.ti -1c
+.RI "volatile int \fBdoneAsser\fP = 1"
+.br
+.ti -1c
+.RI "volatile int \fBstopSharp\fP = 0"
+.br
+.ti -1c
+.RI "volatile int \fBrequestGetXY\fP = 0"
+.br
+.ti -1c
+.RI "volatile int \fBrequestGetAlpha\fP = 0"
+.br
+.ti -1c
+.RI "volatile char \fBignoreSharp\fP"
+.br
+.ti -1c
+.RI "volatile char \fBforceIgnoreSharp\fP =1"
+.br
+.ti -1c
+.RI "volatile char \fBtirette\fP = 0"
+.br
+.ti -1c
+.RI "volatile char \fBfin\fP = 0"
+.br
+.ti -1c
+.RI "volatile unsigned char \fBtxBuffer\fP [\fBTX_BUFFER_SIZE\fP]"
+.br
+.ti -1c
+.RI "volatile short \fBindexTxBuffer\fP"
+.br
+.ti -1c
+.RI "volatile short \fBtxBufferLength\fP"
+.br
+.ti -1c
+.RI "volatile unsigned char \fBtx2Buffer\fP [\fBTX_BUFFER_SIZE\fP]"
+.br
+.ti -1c
+.RI "volatile short \fBindexTx2Buffer\fP"
+.br
+.ti -1c
+.RI "volatile short \fBtx2BufferLength\fP"
+.br
+.ti -1c
+.RI "\fBCouleur\fP \fBcouleur\fP"
+.br
+.in -1c
+.SH "Documentation des fonctions"
+.PP 
+.SS "int main (intargc, char const *argv[])"
+Le parcourt du robot 
+.PP
+\fBNote:\fP
+.RS 4
+À définir dans le main\&.
+.RE
+.PP
+
+.PP
+Définition à la ligne 34 du fichier main_petit_robot\&.c\&.
+.SH "Documentation des variables"
+.PP 
+.SS "\fBCouleur\fP couleur"
+
+.PP
+Définition à la ligne 30 du fichier main_petit_robot\&.c\&.
+.SS "volatile int distance"
+
+.PP
+Définition à la ligne 8 du fichier main_petit_robot\&.c\&.
+.SS "volatile int doneAsser = 1"
+
+.PP
+Définition à la ligne 11 du fichier main_petit_robot\&.c\&.
+.SS "volatile char fin = 0"
+
+.PP
+Définition à la ligne 20 du fichier main_petit_robot\&.c\&.
+.SS "volatile char forceIgnoreSharp =1"
+
+.PP
+Définition à la ligne 17 du fichier main_petit_robot\&.c\&.
+.SS "volatile char ignoreSharp"
+
+.PP
+Définition à la ligne 16 du fichier main_petit_robot\&.c\&.
+.SS "volatile short indexTx2Buffer"
+
+.PP
+Définition à la ligne 27 du fichier main_petit_robot\&.c\&.
+.SS "volatile short indexTxBuffer"
+
+.PP
+Définition à la ligne 23 du fichier main_petit_robot\&.c\&.
+.SS "volatile int requestGetAlpha = 0"
+
+.PP
+Définition à la ligne 14 du fichier main_petit_robot\&.c\&.
+.SS "volatile int requestGetXY = 0"
+
+.PP
+Définition à la ligne 13 du fichier main_petit_robot\&.c\&.
+.SS "volatile \fBPos\fP robot1"
+
+.PP
+Définition à la ligne 10 du fichier main_petit_robot\&.c\&.
+.SS "volatile \fBPos\fP robotNous"
+
+.PP
+Définition à la ligne 9 du fichier main_petit_robot\&.c\&.
+.SS "volatile int stopSharp = 0"
+
+.PP
+Définition à la ligne 12 du fichier main_petit_robot\&.c\&.
+.SS "volatile char tirette = 0"
+
+.PP
+Définition à la ligne 19 du fichier main_petit_robot\&.c\&.
+.SS "volatile unsigned char tx2Buffer[\fBTX_BUFFER_SIZE\fP]"
+
+.PP
+Définition à la ligne 26 du fichier main_petit_robot\&.c\&.
+.SS "volatile short tx2BufferLength"
+
+.PP
+Définition à la ligne 28 du fichier main_petit_robot\&.c\&.
+.SS "volatile unsigned char txBuffer[\fBTX_BUFFER_SIZE\fP]"
+
+.PP
+Définition à la ligne 22 du fichier main_petit_robot\&.c\&.
+.SS "volatile short txBufferLength"
+
+.PP
+Définition à la ligne 24 du fichier main_petit_robot\&.c\&.
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Petit Robot coupe 2014 à partir du code source\&.

@@ -1,0 +1,142 @@
+.TH "comAsser.c" 3 "Jeudi 22 Mai 2014" "Petit Robot coupe 2014" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+comAsser.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'main\&.h'\fP
+.br
+\fC#include 'comAsser\&.h'\fP
+.br
+\fC#include 'uart\&.h'\fP
+.br
+
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsendDelta\fP (short delta)"
+.br
+.ti -1c
+.RI "void \fBsendAlpha\fP (short alpha)"
+.br
+.ti -1c
+.RI "void \fBsendAlphaAbs\fP (short alpha)"
+.br
+.ti -1c
+.RI "void \fBsendStop\fP (void)"
+.br
+.ti -1c
+.RI "void \fBgetXY\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsendSetXY\fP (int x, int y)"
+.br
+.ti -1c
+.RI "void \fBsendSetAlpha\fP (short alpha)"
+.br
+.ti -1c
+.RI "void \fBgetAlpha\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsendPresGros\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsendPresPrecis\fP (void)"
+.br
+.ti -1c
+.RI "void \fBmessage_processing\fP (unsigned char inMessage)"
+.br
+.ti -1c
+.RI "void \fBwaitDoneAsser\fP (void)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "volatile int \fBdoneAsser\fP"
+.br
+.ti -1c
+.RI "volatile int \fBrequestGetAlpha\fP"
+.br
+.ti -1c
+.RI "volatile int \fBrequestGetXY\fP"
+.br
+.ti -1c
+.RI "volatile \fBPos\fP \fBrobotNous\fP"
+.br
+.in -1c
+.SH "Documentation des fonctions"
+.PP 
+.SS "void getAlpha (void)"
+
+.PP
+Définition à la ligne 125 du fichier comAsser\&.c\&.
+.SS "void getXY (void)"
+
+.PP
+Définition à la ligne 86 du fichier comAsser\&.c\&.
+.SS "void message_processing (unsigned charinMessage)"
+
+.PP
+Définition à la ligne 152 du fichier comAsser\&.c\&.
+.SS "void sendAlpha (shortalpha)"
+
+.PP
+Définition à la ligne 36 du fichier comAsser\&.c\&.
+.SS "void sendAlphaAbs (shortalpha)"
+
+.PP
+Définition à la ligne 56 du fichier comAsser\&.c\&.
+.SS "void sendDelta (shortdelta)"
+
+.PP
+Définition à la ligne 16 du fichier comAsser\&.c\&.
+.SS "void sendPresGros (void)"
+
+.PP
+Définition à la ligne 136 du fichier comAsser\&.c\&.
+.SS "void sendPresPrecis (void)"
+
+.PP
+Définition à la ligne 144 du fichier comAsser\&.c\&.
+.SS "void sendSetAlpha (shortalpha)"
+
+.PP
+Définition à la ligne 107 du fichier comAsser\&.c\&.
+.SS "void sendSetXY (intx, inty)"
+
+.PP
+Définition à la ligne 97 du fichier comAsser\&.c\&.
+.SS "void sendStop (void)"
+
+.PP
+Définition à la ligne 76 du fichier comAsser\&.c\&.
+.SS "void waitDoneAsser (void)"
+
+.PP
+Définition à la ligne 233 du fichier comAsser\&.c\&.
+.SH "Documentation des variables"
+.PP 
+.SS "volatile int doneAsser"
+
+.PP
+Définition à la ligne 11 du fichier main_petit_robot\&.c\&.
+.SS "volatile int requestGetAlpha"
+
+.PP
+Définition à la ligne 14 du fichier main_petit_robot\&.c\&.
+.SS "volatile int requestGetXY"
+
+.PP
+Définition à la ligne 13 du fichier main_petit_robot\&.c\&.
+.SS "volatile \fBPos\fP robotNous"
+
+.PP
+Définition à la ligne 9 du fichier main_petit_robot\&.c\&.
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Petit Robot coupe 2014 à partir du code source\&.

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="commAsser.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="128" topLine="0" />
+	</File>
+	<File name="commAsser.h" open="1" top="0" tabpos="3">
+		<Cursor position="707" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="2082" topLine="0" />
+	</File>
+	<File name="uart.cpp" open="1" top="1" tabpos="5">
+		<Cursor position="96" topLine="0" />
+	</File>
+	<File name="uart.h" open="1" top="0" tabpos="4">
+		<Cursor position="374" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

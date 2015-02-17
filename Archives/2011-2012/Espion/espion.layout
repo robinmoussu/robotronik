@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="affich.c" open="0" top="0" tabpos="4">
+		<Cursor position="230" topLine="18" />
+	</File>
+	<File name="affich.h" open="0" top="0" tabpos="5">
+		<Cursor position="274" topLine="0" />
+	</File>
+	<File name="espion.c" open="0" top="0" tabpos="1">
+		<Cursor position="963" topLine="0" />
+	</File>
+	<File name="espion.h" open="0" top="0" tabpos="2">
+		<Cursor position="250" topLine="0" />
+	</File>
+	<File name="main.c" open="0" top="0" tabpos="3">
+		<Cursor position="120" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>
