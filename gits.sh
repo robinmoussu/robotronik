@@ -12,6 +12,7 @@ REPOS=(
     "robotronik.strategie"
     "robotronik.chargeur"
     "robotronik.cartographie"
+    "robotronik.uart"
     )
 
 cloneall() {
